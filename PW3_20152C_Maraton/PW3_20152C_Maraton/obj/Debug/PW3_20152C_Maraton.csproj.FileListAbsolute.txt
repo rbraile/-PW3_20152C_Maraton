@@ -3,3 +3,8 @@ C:\Users\Maxx\Documents\Visual Studio 2012\Projects\maraton\PW3_20152C_Maraton\P
 C:\Users\Maxx\Documents\Visual Studio 2012\Projects\maraton\PW3_20152C_Maraton\PW3_20152C_Maraton\obj\Debug\PW3_20152C_Maraton.csprojResolveAssemblyReference.cache
 C:\Users\Maxx\Documents\Visual Studio 2012\Projects\maraton\PW3_20152C_Maraton\PW3_20152C_Maraton\obj\Debug\PW3_20152C_Maraton.dll
 C:\Users\Maxx\Documents\Visual Studio 2012\Projects\maraton\PW3_20152C_Maraton\PW3_20152C_Maraton\obj\Debug\PW3_20152C_Maraton.pdb
+C:\GitHub\PW3_20152C_Maraton\PW3_20152C_Maraton\PW3_20152C_Maraton\bin\PW3_20152C_Maraton.dll
+C:\GitHub\PW3_20152C_Maraton\PW3_20152C_Maraton\PW3_20152C_Maraton\bin\PW3_20152C_Maraton.pdb
+C:\GitHub\PW3_20152C_Maraton\PW3_20152C_Maraton\PW3_20152C_Maraton\obj\Debug\PW3_20152C_Maraton.csprojResolveAssemblyReference.cache
+C:\GitHub\PW3_20152C_Maraton\PW3_20152C_Maraton\PW3_20152C_Maraton\obj\Debug\PW3_20152C_Maraton.dll
+C:\GitHub\PW3_20152C_Maraton\PW3_20152C_Maraton\PW3_20152C_Maraton\obj\Debug\PW3_20152C_Maraton.pdb

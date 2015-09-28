@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="admin_index.Master.cs" Inherits="PW3_20152C_Maraton.usuario" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link rel="stylesheet" href="css/general.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/bootstrap-theme.css"/>
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+
+    <asp:ContentPlaceHolder ID="adminIndex_head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="login">
+    <header>
+        <h1>Bienvenido, Administrador!</h1>
+    </header>
+    <div id="general-content">
+        <form id="admin_login" runat="server">
+            <asp:ContentPlaceHolder ID="adminIndex_ContentPlaceHolder" runat="server">
+            
+            </asp:ContentPlaceHolder>
+        </form>
+        <asp:Label ID="admin_message" runat="server" Text="Label"></asp:Label>
+    </div>
+    <footer>
+        <p>Universidad Nacional de La Matanza.</p>
+        <p>Dpto. de Ingeniería e Investigaciones Tecnológicas.</p>
+        ­<p>Tecnicatura en Desarrollo Web ­ Programación Web III</p>
+        ­<p>Integrantes : Roberto Braile - Karina Obermeier - Maria Laura Tula</p>
+    </footer>
+</body>
+</html>

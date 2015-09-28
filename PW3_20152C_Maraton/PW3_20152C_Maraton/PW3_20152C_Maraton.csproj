@@ -61,15 +61,18 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admin_index.aspx" />
     <Content Include="css\bootstrap-theme.css" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\general.css" />
     <Content Include="css\login.css" />
     <Content Include="index.aspx" />
-    <Content Include="login.aspx" />
+    <Content Include="newUser_registration.aspx" />
+    <Content Include="newUser_registration_confirm.aspx" />
+    <Content Include="user_login.aspx" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\jquery.js" />
-    <Content Include="usuario.aspx" />
+    <Content Include="user_index.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -77,8 +80,23 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="admin_login.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admin_index.aspx.cs">
+      <DependentUpon>admin_index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_index.aspx.designer.cs">
+      <DependentUpon>admin_index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_index.Master.cs">
+      <DependentUpon>admin_index.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_index.Master.designer.cs">
+      <DependentUpon>admin_index.Master</DependentUpon>
+    </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -86,54 +104,108 @@
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="home.Master.cs">
-      <DependentUpon>home.Master</DependentUpon>
+    <Compile Include="index.Master.cs">
+      <DependentUpon>index.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="home.Master.designer.cs">
-      <DependentUpon>home.Master</DependentUpon>
+    <Compile Include="index.Master.designer.cs">
+      <DependentUpon>index.Master</DependentUpon>
     </Compile>
-    <Compile Include="login.aspx.cs">
-      <DependentUpon>login.aspx</DependentUpon>
+    <Compile Include="newUser_registration.aspx.cs">
+      <DependentUpon>newUser_registration.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="login.aspx.designer.cs">
-      <DependentUpon>login.aspx</DependentUpon>
+    <Compile Include="newUser_registration.aspx.designer.cs">
+      <DependentUpon>newUser_registration.aspx</DependentUpon>
     </Compile>
-    <Compile Include="login.Master.cs">
-      <DependentUpon>login.Master</DependentUpon>
+    <Compile Include="newUser_registration.Master.cs">
+      <DependentUpon>newUser_registration.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="login.Master.designer.cs">
-      <DependentUpon>login.Master</DependentUpon>
+    <Compile Include="newUser_registration.Master.designer.cs">
+      <DependentUpon>newUser_registration.Master</DependentUpon>
+    </Compile>
+    <Compile Include="newUser_registration_confirm.aspx.cs">
+      <DependentUpon>newUser_registration_confirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="newUser_registration_confirm.aspx.designer.cs">
+      <DependentUpon>newUser_registration_confirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="newUser_registration_confirm.Master.cs">
+      <DependentUpon>newUser_registration_confirm.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="newUser_registration_confirm.Master.designer.cs">
+      <DependentUpon>newUser_registration_confirm.Master</DependentUpon>
+    </Compile>
+    <Compile Include="user_login.aspx.cs">
+      <DependentUpon>user_login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user_login.aspx.designer.cs">
+      <DependentUpon>user_login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user_login.Master.cs">
+      <DependentUpon>user_login.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user_login.Master.designer.cs">
+      <DependentUpon>user_login.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="usuario.aspx.cs">
-      <DependentUpon>usuario.aspx</DependentUpon>
+    <Compile Include="admin_login.Master.cs">
+      <DependentUpon>admin_login.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="usuario.aspx.designer.cs">
-      <DependentUpon>usuario.aspx</DependentUpon>
+    <Compile Include="admin_login.Master.designer.cs">
+      <DependentUpon>admin_login.Master</DependentUpon>
     </Compile>
-    <Compile Include="usuario.Master.cs">
-      <DependentUpon>usuario.Master</DependentUpon>
+    <Compile Include="user_index.aspx.cs">
+      <DependentUpon>user_index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="usuario.Master.designer.cs">
-      <DependentUpon>usuario.Master</DependentUpon>
+    <Compile Include="user_index.aspx.designer.cs">
+      <DependentUpon>user_index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user_index.Master.cs">
+      <DependentUpon>user_index.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user_index.Master.designer.cs">
+      <DependentUpon>user_index.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin_login.aspx.cs">
+      <DependentUpon>admin_login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_login.aspx.designer.cs">
+      <DependentUpon>admin_login.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="home.Master" />
+    <Content Include="index.Master" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="images\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="login.Master" />
+    <Content Include="user_login.Master" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="usuario.Master" />
+    <Content Include="user_index.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin_login.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin_index.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="newUser_registration.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="newUser_registration_confirm.Master" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/login.Master" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="PW3_20152C_Maraton.login" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/user_login.Master" AutoEventWireup="true" CodeBehind="user_login.aspx.cs" Inherits="PW3_20152C_Maraton.login" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link rel="stylesheet" href="css/login.css"/>
 </asp:Content>

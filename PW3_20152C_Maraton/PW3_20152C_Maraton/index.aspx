@@ -1,12 +1,12 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/home.Master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="PW3_20152C_Maraton.home1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/index.Master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="PW3_20152C_Maraton.home1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <nav>
         <ul class="nav nav-pills">
-            <li role="presentation"><a href="/login.aspx">Ingresar</a></li>
-            <li role="presentation"><a href="#">Registro</a></li>
-            <li role="presentation"><a href="#">Administrador</a></li>
+            <li role="presentation"><a href="/user_login.aspx">Ingresar como Usuario</a></li>
+            <li role="presentation"><a href="/newUser_registration.aspx">Registrarse</a></li>
+            <li role="presentation"><a href="/admin_login.aspx">Ingresar como Administrador</a></li>
         </ul>
     </nav>
     <div class="panel panel-default">

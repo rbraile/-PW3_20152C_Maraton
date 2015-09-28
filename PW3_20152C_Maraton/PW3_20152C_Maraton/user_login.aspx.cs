@@ -9,7 +9,7 @@ namespace PW3_20152C_Maraton
 {
     public partial class login : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
+        protected void UserLogin_Load(object sender, EventArgs e)
         {
             Label lblMensaje = (Label)Master.FindControl("mensaje");
             lblMensaje.Text = "";
@@ -18,8 +18,8 @@ namespace PW3_20152C_Maraton
         protected void login_user(object sender, EventArgs e)
         {
             Label lblMensaje = (Label)Master.FindControl("mensaje");
-            lblMensaje.Text = "Se ha logeado correctamente";
-            Response.Redirect("/usuario.aspx");
+            lblMensaje.Text = "Se ha logueado correctamente";
+            Response.Redirect("/user_index.aspx");
         }
     }
 }

@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <nav>
         <ul class="nav nav-pills">
-            <li role="presentation"><a href="#">Ingresar</a></li>
+            <li role="presentation"><a href="/login.aspx">Ingresar</a></li>
             <li role="presentation"><a href="#">Registro</a></li>
             <li role="presentation"><a href="#">Administrador</a></li>
         </ul>

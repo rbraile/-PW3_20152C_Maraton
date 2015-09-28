@@ -1,0 +1,51 @@
+﻿header {
+    background: blue;
+    padding: 20px 0;
+    color: #fff;    
+}
+
+header h1 {
+    text-align: center;
+}
+
+.login-form {
+    width: 400px;
+    margin: 20px auto 0;
+}
+
+#general-content {
+    width: 960px;
+    margin: 0 auto;
+    min-height: 446px;
+}
+
+.login #general-content {
+    min-height: 322px;
+}
+.error {
+    color: red;
+}
+
+.fields-content span {
+    color: red;
+}
+
+.fields-content label {
+    width:100px;
+    margin-right: 6px;
+}
+
+nav {
+    padding-top: 40px;
+}
+
+footer {
+    background: blue;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-weight: bold;
+}

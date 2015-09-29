@@ -62,6 +62,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="admin_index.aspx" />
+    <Content Include="admin_marathonCreation.aspx" />
+    <Content Include="admin_marathonCreation_confirm.aspx" />
+    <Content Include="admin_marathonResultUpload.aspx" />
+    <Content Include="admin_marathonResultUpload_confirm.aspx" />
     <Content Include="css\bootstrap-theme.css" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\general.css" />
@@ -96,6 +100,62 @@
     </Compile>
     <Compile Include="admin_index.Master.designer.cs">
       <DependentUpon>admin_index.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin_marathonCreation.aspx.cs">
+      <DependentUpon>admin_marathonCreation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_marathonCreation.aspx.designer.cs">
+      <DependentUpon>admin_marathonCreation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_marathonCreation.Master.cs">
+      <DependentUpon>admin_marathonCreation.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_marathonCreation.Master.designer.cs">
+      <DependentUpon>admin_marathonCreation.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin_marathonCreation_confirm.aspx.cs">
+      <DependentUpon>admin_marathonCreation_confirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_marathonCreation_confirm.aspx.designer.cs">
+      <DependentUpon>admin_marathonCreation_confirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_marathonCreation_confirm.Master.cs">
+      <DependentUpon>admin_marathonCreation_confirm.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_marathonCreation_confirm.Master.designer.cs">
+      <DependentUpon>admin_marathonCreation_confirm.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin_marathonResultUpload.aspx.cs">
+      <DependentUpon>admin_marathonResultUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_marathonResultUpload.aspx.designer.cs">
+      <DependentUpon>admin_marathonResultUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_marathonResultUpload.Master.cs">
+      <DependentUpon>admin_marathonResultUpload.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_marathonResultUpload.Master.designer.cs">
+      <DependentUpon>admin_marathonResultUpload.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin_marathonResultUpload_confirm.aspx.cs">
+      <DependentUpon>admin_marathonResultUpload_confirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_marathonResultUpload_confirm.aspx.designer.cs">
+      <DependentUpon>admin_marathonResultUpload_confirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_marathonResultUpload_confirm.Master.cs">
+      <DependentUpon>admin_marathonResultUpload_confirm.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_marathonResultUpload_confirm.Master.designer.cs">
+      <DependentUpon>admin_marathonResultUpload_confirm.Master</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
@@ -206,6 +266,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="newUser_registration_confirm.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin_marathonCreation.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin_marathonCreation_confirm.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin_marathonResultUpload.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin_marathonResultUpload_confirm.Master" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

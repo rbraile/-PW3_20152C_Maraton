@@ -6,9 +6,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="resultUpload_Content" runat="server">
     <div class="form-horizontal login-form">
         <div class="form-group">
-            <label for="inputEmail3" class="col-sm-5 control-label">
+            <label for="inputEmail3" class="col-sm-12 control-label">
                 Dorsal Numero: 1</label>
-             <label for="inputEmail3" class="col-sm-5 control-label">
+             <label for="inputEmail3" class="col-sm-12 control-label">
                 Nombre y Apellido: Juan Perez</label>   
             <label for="inputEmail3" class="col-sm-5 control-label">
                 Posicion de llegada</label>

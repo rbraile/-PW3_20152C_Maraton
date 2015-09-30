@@ -19,7 +19,7 @@
             <label for="inputEmail3" class="col-sm-5 control-label">
                 Contraseña</label>
             <div class="col-sm-7">
-                <asp:TextBox CssClass="form-control" ID="TextBox2" runat="server"></asp:TextBox>
+                <asp:TextBox CssClass="form-control" ID="TextBox2" runat="server" TextMode="Password"></asp:TextBox>
                 <asp:RequiredFieldValidator CssClass="error" ID="RequiredFieldValidator2" ControlToValidate="TextBox2"
                     runat="server" Display="Dynamic" ErrorMessage="Este campo es obligatorio"></asp:RequiredFieldValidator>
             </div>

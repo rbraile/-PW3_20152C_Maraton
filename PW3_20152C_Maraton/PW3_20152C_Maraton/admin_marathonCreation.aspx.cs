@@ -15,7 +15,7 @@ namespace PW3_20152C_Maraton
         }
 
         protected void new_marathon(object sender, EventArgs e)
-        {
+        { 
             Response.Redirect("/admin_marathonCreation_confirm.aspx");
         }
     }

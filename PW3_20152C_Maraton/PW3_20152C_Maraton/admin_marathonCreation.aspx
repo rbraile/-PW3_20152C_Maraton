@@ -47,7 +47,7 @@
                Primer Premio</label>
             <div class="col-sm-7">
                 <asp:TextBox CssClass="form-control" ID="first_place_prize" runat="server"></asp:TextBox>
-                <asp:RangeValidator ID="RangeValidator1" runat="server" ErrorMessage="Introducir un alor entre 500 y 5000" ControlToValidate="first_place_prize" MaximumValue="5000" MinimumValue="500"></asp:RangeValidator>
+                <asp:RangeValidator ID="RangeValidator1" runat="server" CssClass="error" ErrorMessage="Introducir un valor entre 500 y 5000" ControlToValidate="first_place_prize" MaximumValue="5000" MinimumValue="500" Type="Double"></asp:RangeValidator>
             </div>
         </div>
         <div class="form-group">
@@ -55,7 +55,7 @@
                Segundo Premio</label>
             <div class="col-sm-7">
                 <asp:TextBox CssClass="form-control" ID="second_place_prize" runat="server"></asp:TextBox>
-                <asp:RangeValidator ID="RangeValidator2" runat="server" ErrorMessage="Introducir un alor entre 500 y 5000" ControlToValidate="second_place_prize" MaximumValue="5000" MinimumValue="500"></asp:RangeValidator>
+                <asp:RangeValidator ID="RangeValidator2" runat="server" CssClass="error" ErrorMessage="Introducir un valor entre 500 y 5000" ControlToValidate="second_place_prize" MaximumValue="5000" MinimumValue="500" Type="Double"></asp:RangeValidator>
             </div>
         </div>
         <div class="form-group">
@@ -63,13 +63,12 @@
                Tercer Premio</label>
             <div class="col-sm-7">
                 <asp:TextBox CssClass="form-control" ID="third_place_prize" runat="server"></asp:TextBox>
-                <asp:RangeValidator ID="RangeValidator3" runat="server" ErrorMessage="Introducir un alor entre 500 y 5000" ControlToValidate="third_place_prize" MaximumValue="5000" MinimumValue="500"></asp:RangeValidator>
+                <asp:RangeValidator ID="RangeValidator3" runat="server" CssClass="error" ErrorMessage="Introducir un valor entre 500 y 5000" ControlToValidate="third_place_prize" MaximumValue="5000" MinimumValue="500" Visible="False" Type="Double"></asp:RangeValidator>
             </div>
         </div>
         <div class="form-group">
             <div class="col-sm-offset-5 col-sm-12">
-                <asp:Button CssClass="btn btn-default" ID="Button1" runat="server" Text="Crear Nueva Maraton"
-                    OnClick="new_marathon" />
+                <asp:Button CssClass="btn btn-default" ID="Button1" runat="server" Text="Crear Nueva Maraton" OnClick="new_marathon" />
                 <asp:Button CssClass="btn btn-default" ID="Button2" runat="server" Text="Cancelar" />
             </div>
         </div>

@@ -4,9 +4,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <nav>
         <ul class="nav nav-pills">
-            <li role="presentation"><a href="#">Inscribirse a una Maraton</a></li>
-            <li role="presentation"><a href="#">Ver historial de Maratones</a></li>
-            <li role="presentation"><a href="#">Administrar datos de Usuario</a></li>
+            <li role="presentation"><a href="user_register_marathon.aspx">Inscribirse a una Maraton</a></li>
+            <li role="presentation"><a href="user_marathon_records.aspx">Ver historial de Maratones</a></li>
+            <li role="presentation"><a href="user_edit.aspx">Administrar datos de Usuario</a></li>
             <li role="presentation"><a href="/index.aspx">Cerrar sesion</a></li>
         </ul>
     </nav>

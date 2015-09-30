@@ -19,7 +19,7 @@
             <label for="inputPassword3" class="col-sm-2 control-label">
                 Clave</label>
             <div class="col-sm-10">
-                <asp:TextBox CssClass="form-control" ID="admin_password" runat="server"></asp:TextBox>
+                <asp:TextBox CssClass="form-control" ID="admin_password" runat="server" TextMode="Password"></asp:TextBox>
                 <asp:RequiredFieldValidator CssClass="error" ID="admin_password_required" runat="server"
                     ControlToValidate="admin_password" Display="Dynamic" ErrorMessage="Este campo es obligatorio"></asp:RequiredFieldValidator>
             </div>

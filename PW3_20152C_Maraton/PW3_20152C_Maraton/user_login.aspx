@@ -14,7 +14,7 @@
               <div class="form-group">
                 <label for="inputPassword3" class="col-sm-2 control-label">Clave</label>
                 <div class="col-sm-10">
-                     <asp:TextBox CssClass="form-control" ID="user_clave" runat="server"></asp:TextBox>
+                     <asp:TextBox CssClass="form-control" ID="user_clave" runat="server" TextMode="Password"></asp:TextBox>
                     <asp:RequiredFieldValidator CssClass="error" ID="RequiredFieldValidator2" runat="server" ControlToValidate="user_clave" Display="Dynamic" ErrorMessage="Este campo es obligatorio"></asp:RequiredFieldValidator>
                 </div>
               </div>

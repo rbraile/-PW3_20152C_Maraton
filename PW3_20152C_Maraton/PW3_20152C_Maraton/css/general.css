@@ -49,3 +49,12 @@ footer {
 footer p {
     font-weight: bold;
 }
+
+.confirm-content {
+    margin: 20px 0;
+}
+
+.buttons-confirm {
+    text-align: center;
+    margin: 20px auto 0;
+}

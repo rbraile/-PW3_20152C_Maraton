@@ -45,5 +45,14 @@
             </tr>
         </tbody>
       </table>
+
+      <nav>
+        <ul class="nav nav-pills">
+            <li role="presentation"><a href="/user_register_marathon.aspx">Inscribirse a una Maraton</a></li>
+            <li role="presentation"><a href="/user_edit.aspx">Administrar datos de Usuario</a></li>
+            <li role="presentation"><a href="/user_index.aspx">Volver al Inicio de Usuario</a></li>
+        </ul>
+    </nav>
+
     </div>
 </asp:Content>

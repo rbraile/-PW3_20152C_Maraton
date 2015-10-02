@@ -25,7 +25,6 @@
             
             </asp:ContentPlaceHolder>
         </form>
-        <asp:Label ID="admin_message" runat="server" Text="Label"></asp:Label>
     </div>
     <footer>
         <p>Universidad Nacional de La Matanza.</p>

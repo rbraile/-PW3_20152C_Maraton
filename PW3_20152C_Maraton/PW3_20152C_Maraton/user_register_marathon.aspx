@@ -2,7 +2,15 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="userIndex_head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">        
-      <div id="confirm2" runat="server" class="alert alert-success confirm-content" role="alert">
+      <nav>
+        <ul class="nav nav-pills">
+            <li role="presentation"><a href="/user_marathon records.aspx">Ver Historial de Maratones</a></li>
+            <li role="presentation"><a href="/user_edit.aspx">Administrar datos de Usuario</a></li>
+            <li role="presentation"><a href="/user_index.aspx">Volver al Inicio de Usuario</a></li>
+        </ul>
+    </nav>
+    
+    <div id="confirm2" runat="server" class="alert alert-success confirm-content" role="alert">
           <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
           <span class="sr-only">Success:</span>
             Se ha registrado exitosamente a la maraton <a href="user_index.aspx">Volver</a>

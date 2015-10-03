@@ -18,5 +18,10 @@ namespace PW3_20152C_Maraton
         { 
             Response.Redirect("/admin_marathonCreation_confirm.aspx");
         }
+
+        protected void cancel_marathon_creation(object sender, EventArgs e)
+        {
+            Response.Redirect("/admin_index.aspx");
+        }
     }
 }

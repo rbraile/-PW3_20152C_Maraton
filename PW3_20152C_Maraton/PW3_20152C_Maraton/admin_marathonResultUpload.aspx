@@ -43,7 +43,7 @@
             <div class="col-sm-offset-5 col-sm-12">
                 <asp:Button CssClass="btn btn-default" ID="Button1" runat="server" Text="Cargar Resultados"
                     OnClick="upload_result" />
-                <asp:Button CssClass="btn btn-default" ID="Button2" runat="server" Text="Cancelar"/>
+                <a class="btn btn-default" href="admin_index.aspx">Cancelar</a>
             </div>
         </div>
     </div></asp:Content>

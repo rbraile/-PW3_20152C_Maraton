@@ -69,7 +69,7 @@
         <div class="form-group">
             <div class="col-sm-offset-5 col-sm-12">
                 <asp:Button CssClass="btn btn-default" ID="Button1" runat="server" Text="Crear Nueva Maraton" OnClick="new_marathon" />
-                <asp:Button CssClass="btn btn-default" ID="Button2" runat="server" Text="Cancelar" />
+                <a class="btn btn-default" href="admin_index.aspx">Cancelar</a>
             </div>
         </div>
     </div>

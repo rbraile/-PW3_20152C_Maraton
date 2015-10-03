@@ -112,26 +112,12 @@
     <Compile Include="admin_marathonCreation.aspx.designer.cs">
       <DependentUpon>admin_marathonCreation.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin_marathonCreation.Master.cs">
-      <DependentUpon>admin_marathonCreation.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="admin_marathonCreation.Master.designer.cs">
-      <DependentUpon>admin_marathonCreation.Master</DependentUpon>
-    </Compile>
     <Compile Include="admin_marathonCreation_confirm.aspx.cs">
       <DependentUpon>admin_marathonCreation_confirm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="admin_marathonCreation_confirm.aspx.designer.cs">
       <DependentUpon>admin_marathonCreation_confirm.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="admin_marathonCreation_confirm.Master.cs">
-      <DependentUpon>admin_marathonCreation_confirm.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="admin_marathonCreation_confirm.Master.designer.cs">
-      <DependentUpon>admin_marathonCreation_confirm.Master</DependentUpon>
     </Compile>
     <Compile Include="admin_marathonResultUpload.aspx.cs">
       <DependentUpon>admin_marathonResultUpload.aspx</DependentUpon>
@@ -140,26 +126,12 @@
     <Compile Include="admin_marathonResultUpload.aspx.designer.cs">
       <DependentUpon>admin_marathonResultUpload.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin_marathonResultUpload.Master.cs">
-      <DependentUpon>admin_marathonResultUpload.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="admin_marathonResultUpload.Master.designer.cs">
-      <DependentUpon>admin_marathonResultUpload.Master</DependentUpon>
-    </Compile>
     <Compile Include="admin_marathonResultUpload_confirm.aspx.cs">
       <DependentUpon>admin_marathonResultUpload_confirm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="admin_marathonResultUpload_confirm.aspx.designer.cs">
       <DependentUpon>admin_marathonResultUpload_confirm.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="admin_marathonResultUpload_confirm.Master.cs">
-      <DependentUpon>admin_marathonResultUpload_confirm.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="admin_marathonResultUpload_confirm.Master.designer.cs">
-      <DependentUpon>admin_marathonResultUpload_confirm.Master</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
@@ -182,26 +154,12 @@
     <Compile Include="newUser_registration.aspx.designer.cs">
       <DependentUpon>newUser_registration.aspx</DependentUpon>
     </Compile>
-    <Compile Include="newUser_registration.Master.cs">
-      <DependentUpon>newUser_registration.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="newUser_registration.Master.designer.cs">
-      <DependentUpon>newUser_registration.Master</DependentUpon>
-    </Compile>
     <Compile Include="newUser_registration_confirm.aspx.cs">
       <DependentUpon>newUser_registration_confirm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="newUser_registration_confirm.aspx.designer.cs">
       <DependentUpon>newUser_registration_confirm.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="newUser_registration_confirm.Master.cs">
-      <DependentUpon>newUser_registration_confirm.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="newUser_registration_confirm.Master.designer.cs">
-      <DependentUpon>newUser_registration_confirm.Master</DependentUpon>
     </Compile>
     <Compile Include="user_edit.aspx.cs">
       <DependentUpon>user_edit.aspx</DependentUpon>
@@ -232,13 +190,6 @@
       <DependentUpon>user_login.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="admin_login.Master.cs">
-      <DependentUpon>admin_login.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="admin_login.Master.designer.cs">
-      <DependentUpon>admin_login.Master</DependentUpon>
-    </Compile>
     <Compile Include="user_index.aspx.cs">
       <DependentUpon>user_index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -288,28 +239,7 @@
     <Content Include="user_index.Master" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="admin_login.Master" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="admin_index.Master" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="newUser_registration.Master" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="newUser_registration_confirm.Master" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="admin_marathonCreation.Master" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="admin_marathonCreation_confirm.Master" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="admin_marathonResultUpload.Master" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="admin_marathonResultUpload_confirm.Master" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

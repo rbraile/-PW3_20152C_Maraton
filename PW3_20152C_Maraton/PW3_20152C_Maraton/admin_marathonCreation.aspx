@@ -1,10 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/admin_marathonCreation.Master"
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/admin_index.Master"
     CodeBehind="admin_marathonCreation.aspx.cs" Inherits="PW3_20152C_Maraton.admin_marathonCreation" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="marathonCreation_head" runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="adminIndex_head" runat="server">
     <link rel="stylesheet" href="css/login.css" />
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="marathonCreation_Content" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="adminIndex_ContentPlaceHolder" runat="server">
     <div class="form-horizontal login-form">
         <div class="form-group">
             <label class="col-sm-5 control-label">

@@ -1,8 +1,8 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/newUser_registration_confirm.Master"CodeBehind="newUser_registration_confirm.aspx.cs" Inherits="PW3_20152C_Maraton.newUser_registration_confirm" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/admin_index.Master"CodeBehind="newUser_registration_confirm.aspx.cs" Inherits="PW3_20152C_Maraton.newUser_registration_confirm" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="newUserConfirm_head" runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="adminIndex_head" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="newUserConfirm_ContentPlaceHolder" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="adminIndex_ContentPlaceHolder" runat="server">
     <h2>Nuevo Usuario creado exitosamente!</h2>
     <nav>
         <ul class="nav nav-pills">            

@@ -1,10 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/admin_marathonCreation.Master"
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/admin_index.Master"
     CodeBehind="admin_marathonCreation.aspx.cs" Inherits="PW3_20152C_Maraton.admin_marathonCreation" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="marathonCreation_head" runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="adminIndex_head" runat="server">
     <link rel="stylesheet" href="css/login.css" />
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="marathonCreation_Content" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="adminIndex_ContentPlaceHolder" runat="server">
     <div class="form-horizontal login-form">
         <div class="form-group">
             <label class="col-sm-5 control-label">
@@ -69,7 +69,7 @@
         <div class="form-group">
             <div class="col-sm-offset-5 col-sm-12">
                 <asp:Button CssClass="btn btn-default" ID="Button1" runat="server" Text="Crear Nueva Maraton" OnClick="new_marathon" />
-                <asp:Button CssClass="btn btn-default" ID="Button2" runat="server" Text="Cancelar" />
+                <a class="btn btn-default" href="admin_index.aspx">Cancelar</a>
             </div>
         </div>
     </div>

@@ -11,14 +11,10 @@ namespace PW3_20152C_Maraton
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Label lblMensaje = (Label)Master.FindControl("mensaje");
-            lblMensaje.Text = "";
         }
 
         protected void login_admin(object sender, EventArgs e)
         {
-            Label lblMensaje = (Label)Master.FindControl("mensaje");
-            lblMensaje.Text = "Se ha logueado correctamente";
             Response.Redirect("/admin_index.aspx");
         }
     }

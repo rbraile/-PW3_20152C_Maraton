@@ -1,9 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/admin_marathonResultUpload.Master" AutoEventWireup="true" CodeBehind="admin_marathonResultUpload.aspx.cs" Inherits="PW3_20152C_Maraton.admin_marathonResultUpload1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/admin_index.Master" AutoEventWireup="true" CodeBehind="admin_marathonResultUpload.aspx.cs" Inherits="PW3_20152C_Maraton.admin_marathonResultUpload1" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="resultUpload_head" runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="adminIndex_head" runat="server">
     <link rel="stylesheet" href="css/login.css" />
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="resultUpload_Content" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="adminIndex_ContentPlaceHolder" runat="server">
     <div class="form-horizontal login-form">
         <div class="form-group">
             <label for="inputEmail3" class="col-sm-12 control-label">
@@ -43,7 +43,7 @@
             <div class="col-sm-offset-5 col-sm-12">
                 <asp:Button CssClass="btn btn-default" ID="Button1" runat="server" Text="Cargar Resultados"
                     OnClick="upload_result" />
-                <asp:Button CssClass="btn btn-default" ID="Button2" runat="server" Text="Cancelar"/>
+                <a class="btn btn-default" href="admin_index.aspx">Cancelar</a>
             </div>
         </div>
     </div></asp:Content>

@@ -16,7 +16,7 @@ namespace PW3_20152C_Maraton
 
         protected void validarFecha(object source, ServerValidateEventArgs args)
         {
-            labelMessage.Text = "paso";
+
                 DateTime.ParseExact(args.Value, "d",
                     System.Globalization.DateTimeFormatInfo.InvariantInfo);
                 args.IsValid = true;

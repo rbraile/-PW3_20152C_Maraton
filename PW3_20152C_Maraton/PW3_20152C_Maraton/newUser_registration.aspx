@@ -45,6 +45,17 @@
         </div>
         <div class="form-group">
             <label for="inputEmail3" class="col-sm-5 control-label">
+                Email:</label>
+            <div class="col-sm-7">
+                <asp:TextBox CssClass="form-control" ID="Email" runat="server"></asp:TextBox>
+                <asp:RequiredFieldValidator CssClass="error" ID="RequiredFieldValidator7" ControlToValidate="Email"
+                    runat="server" Display="Dynamic" ErrorMessage="Este campo es obligatorio"></asp:RequiredFieldValidator>
+                <asp:RegularExpressionValidator ID="RegularExpressionEmail" CssClass="error" runat="server" ErrorMessage="Email invalido." ControlToValidate="Email" ValidationExpression="^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$" />
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="inputEmail3" class="col-sm-5 control-label">
                 Fecha de Nacimiento</label>
             <div class="col-sm-7">
                 <asp:TextBox CssClass="form-control" ID="TextBox5" runat="server"></asp:TextBox>

@@ -3,6 +3,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="adminIndex_head" runat="server">
     <link rel="stylesheet" href="css/login.css" />
+    <script src="scripts/funciones.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="adminIndex_ContentPlaceHolder" runat="server">
     <div class="form-horizontal login-form">
@@ -47,8 +48,9 @@
                 Fecha de Nacimiento</label>
             <div class="col-sm-7">
                 <asp:TextBox CssClass="form-control" ID="TextBox5" runat="server"></asp:TextBox>
-                <asp:RequiredFieldValidator CssClass="error" ID="RequiredFieldValidator5" ControlToValidate="TextBox5"
-                    runat="server" Display="Dynamic" ErrorMessage="Este campo es obligatorio"></asp:RequiredFieldValidator>
+                <asp:CustomValidator CssClass="error" ControlToValidate="TextBox5" ClientValidationFunction="validateDate" Display="Dynamic" ValidationGroup="AllValidators" ID="validarFecha" runat="server" ErrorMessage="La fecha debe tener el siguiente formato dd-mm-aaaa">
+                </asp:CustomValidator>
+                <asp:RequiredFieldValidator CssClass="error" ControlToValidate="TextBox5" ID="RequiredFieldValidator5" runat="server" ErrorMessage="Este campo es obligatorio"></asp:RequiredFieldValidator>
             </div>
         </div>
         <div class="form-group">

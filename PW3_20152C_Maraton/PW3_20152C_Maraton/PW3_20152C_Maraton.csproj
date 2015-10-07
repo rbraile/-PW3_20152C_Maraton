@@ -73,6 +73,7 @@
     <Content Include="index.aspx" />
     <Content Include="newUser_registration.aspx" />
     <Content Include="newUser_registration_confirm.aspx" />
+    <Content Include="scripts\funciones.js" />
     <Content Include="user_edit.aspx" />
     <Content Include="user_edit_confirm.aspx" />
     <Content Include="user_login.aspx" />

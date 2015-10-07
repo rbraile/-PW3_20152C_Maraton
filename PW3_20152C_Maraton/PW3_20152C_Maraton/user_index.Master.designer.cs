@@ -11,15 +11,7 @@ namespace PW3_20152C_Maraton {
     
     
     public partial class usuario {
-        
-        /// <summary>
-        /// Control Head1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        //protected global::System.Web.UI.HtmlControls.HtmlHead Head1;
+       
         
         /// <summary>
         /// Control userIndex_head.
@@ -31,6 +23,24 @@ namespace PW3_20152C_Maraton {
         protected global::System.Web.UI.WebControls.ContentPlaceHolder userIndex_head;
         
         /// <summary>
+        /// Control UserTitle.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder UserTitle;
+        
+        /// <summary>
+        /// Control UserHeader.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder UserHeader;
+        
+        /// <summary>
         /// Control ContentPlaceHolder1.
         /// </summary>
         /// <remarks>
@@ -38,5 +48,7 @@ namespace PW3_20152C_Maraton {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        
+
     }
 }

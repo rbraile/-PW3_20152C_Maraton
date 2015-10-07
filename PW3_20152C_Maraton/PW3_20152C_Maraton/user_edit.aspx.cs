@@ -14,9 +14,22 @@ namespace PW3_20152C_Maraton
 
         }
 
-        protected void edituserButton_Click(object sender, EventArgs e)
+        protected void validarFecha(object source, ServerValidateEventArgs args)
         {
-            Response.Redirect("/user_edit_confirm.aspx");
+            labelMessage.Text = "paso";
+                DateTime.ParseExact(args.Value, "d",
+                    System.Globalization.DateTimeFormatInfo.InvariantInfo);
+                args.IsValid = true;
+           
+        }
+
+        
+
+        protected void edituserButton_Click(object sender, EventArgs e) {
+            if (Page.IsValid) {
+                Response.Redirect("/user_edit_confirm.aspx");
+            }
+          
         }
 
         protected void cancelar_Click(object sender, EventArgs e)

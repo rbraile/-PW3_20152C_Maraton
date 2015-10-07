@@ -22,6 +22,10 @@
                 <asp:TextBox CssClass="form-control" ID="max_participants" runat="server"></asp:TextBox>
                 <asp:RequiredFieldValidator CssClass="error" ID="RequiredFieldValidator1" ControlToValidate="max_participants"
                     runat="server" Display="Dynamic" ErrorMessage="Este campo es obligatorio"></asp:RequiredFieldValidator>
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" CssClass="error"
+                            ControlToValidate="max_participants" ErrorMessage="Ingrese Valores Numericos"
+                            ValidationExpression="^[0-9]*">
+                </asp:RegularExpressionValidator>
             </div>
         </div>
         <div class="form-group">
@@ -40,6 +44,10 @@
                 <asp:TextBox CssClass="form-control" ID="max_participants_waitingList" runat="server"></asp:TextBox>
                 <asp:RequiredFieldValidator CssClass="error" ID="RequiredFieldValidator3" ControlToValidate="max_participants_waitingList"
                     runat="server" Display="Dynamic" ErrorMessage="Este campo es obligatorio"></asp:RequiredFieldValidator>
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" CssClass="error"
+                            ControlToValidate="max_participants_waitingList" ErrorMessage="Ingrese Valores Numericos"
+                            ValidationExpression="^[0-9]*">
+                </asp:RegularExpressionValidator>
             </div>
         </div>
         <div class="form-group">

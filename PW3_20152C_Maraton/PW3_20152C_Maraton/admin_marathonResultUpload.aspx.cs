@@ -16,7 +16,7 @@ namespace PW3_20152C_Maraton
 
         protected void upload_result(object sender, EventArgs e)
         {
-
+            Response.Redirect("/admin_marathonResultUpload_confirm.aspx");
         }
 
     }

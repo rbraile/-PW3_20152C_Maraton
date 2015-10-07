@@ -3,11 +3,5 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="adminIndex_ContentPlaceHolder" runat="server">
     <h2>Resultados cargados exitosamente!</h2>
-    <nav>
-        <ul class="nav nav-pills">        
-            <li role="presentation"><a href="/admin_marathonResultUpload.aspx">Cargar nuevos resultados de una Maraton</a></li>    
-            <li role="presentation"><a href="/admin_marathonCreation.aspx">Crear una Maraton</a></li>
-            <li role="presentation"><a href="/admin_index.aspx">Volver al Inicio de Administrador</a></li>
-        </ul>
-    </nav>
+
 </asp:Content>

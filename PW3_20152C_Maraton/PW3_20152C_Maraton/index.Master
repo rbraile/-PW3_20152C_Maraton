@@ -1,5 +1,8 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="index.Master.cs" Inherits="PW3_20152C_Maraton.home" %>
 
+<%@ Register Src="~/ucFooter.ascx" TagPrefix="uc1" TagName="ucFooter" %>
+
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -25,11 +28,8 @@
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
     </div>
-    <footer>
-        <div><asp:Label ID="texto1" runat="server" Text="Label"></asp:Label></div>
-        <div><asp:Label ID="texto2" runat="server" Text="Label"></asp:Label></div>
-        <div><asp:Label ID="texto3" runat="server" Text="Label"></asp:Label></div>
-        <div><asp:Label ID="texto4" runat="server" Text="Label"></asp:Label></div>
+    <footer runat="server">
+        <uc1:ucFooter runat="server" id="ucFooter" />
     </footer>
 </body>
 </html>

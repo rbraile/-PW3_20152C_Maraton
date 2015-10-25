@@ -74,6 +74,7 @@
     <Content Include="newUser_registration.aspx" />
     <Content Include="newUser_registration_confirm.aspx" />
     <Content Include="scripts\funciones.js" />
+    <Content Include="ucFooter.ascx" />
     <Content Include="user_edit.aspx" />
     <Content Include="user_edit_confirm.aspx" />
     <Content Include="user_login.aspx" />
@@ -161,6 +162,13 @@
     </Compile>
     <Compile Include="newUser_registration_confirm.aspx.designer.cs">
       <DependentUpon>newUser_registration_confirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ucFooter.ascx.cs">
+      <DependentUpon>ucFooter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ucFooter.ascx.designer.cs">
+      <DependentUpon>ucFooter.ascx</DependentUpon>
     </Compile>
     <Compile Include="user_edit.aspx.cs">
       <DependentUpon>user_edit.aspx</DependentUpon>

@@ -11,18 +11,9 @@ namespace PW3_20152C_Maraton
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
-            {
-                ucFooter();
-            }
+
         }
 
-        private void ucFooter()
-        {
-            texto1.Text = "Universidad Nacional de La Matanza.";
-            texto2.Text = "Dpto. de Ingeniería e Investigaciones Tecnológicas.";
-            texto3.Text = "Tecnicatura en Desarrollo Web ­ Programación Web III.";
-            texto4.Text = "Integrantes : Roberto Braile - Karina Obermeier - Maria Laura Tula.";
-        }
+      
     }
 }

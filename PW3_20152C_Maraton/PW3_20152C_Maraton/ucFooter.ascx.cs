@@ -7,12 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace PW3_20152C_Maraton
 {
-    public partial class login_user : System.Web.UI.MasterPage
+    public partial class ucFooter : System.Web.UI.UserControl
     {
         protected void Page_Load(object sender, EventArgs e)
-        {       
+        {
 
         }
-
     }
 }

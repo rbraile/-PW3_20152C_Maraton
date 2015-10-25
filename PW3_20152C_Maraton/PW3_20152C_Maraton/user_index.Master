@@ -1,9 +1,12 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="user_index.Master.cs" Inherits="PW3_20152C_Maraton.usuario" %>
 
+<%@ Register Src="~/ucFooter.ascx" TagPrefix="uc1" TagName="ucFooter" %>
+
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head id="Head1" runat="server">
+<head id="Head" runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
     <link rel="stylesheet" href="css/general.css"/>
@@ -39,11 +42,8 @@
         
         
     </div>
-    <footer>
-        <div><asp:Label ID="texto1" runat="server" Text="Label"></asp:Label></div>
-        <div><asp:Label ID="texto2" runat="server" Text="Label"></asp:Label></div>
-        <div><asp:Label ID="texto3" runat="server" Text="Label"></asp:Label></div>
-        <div><asp:Label ID="texto4" runat="server" Text="Label"></asp:Label></div>
+    <footer runat="server">
+        <uc1:ucFooter runat="server" id="ucFooter" />
     </footer>
 </body>
 </html>

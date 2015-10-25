@@ -1,9 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/admin_index.Master" AutoEventWireup="true"
     CodeBehind="admin_login.aspx.cs" Inherits="PW3_20152C_Maraton.login" %>
-
 <asp:Content ID="Content1" ContentPlaceHolderID="adminIndex_head" runat="server">
     <link rel="stylesheet" href="css/login.css" />
 </asp:Content>
+<asp:Content ID="Header" ContentPlaceHolderID="Admin_Header" runat="server"></asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="adminIndex_ContentPlaceHolder" runat="server">
     <div class="form-horizontal login-form">
         <div class="form-group">

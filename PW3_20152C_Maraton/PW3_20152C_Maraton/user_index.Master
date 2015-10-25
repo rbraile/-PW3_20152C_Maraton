@@ -16,10 +16,22 @@
     </asp:ContentPlaceHolder>
 </head>
 <body class="login">
-    <header>
-        <h1>Bienvenido, Usuario!</h1>
-    </header>
-    <div id="general-content">
+    <asp:ContentPlaceHolder ID="UserTitle" runat="server">
+        <header>
+            <h1>Bienvenido, Usuario!</h1>
+        </header>
+    </asp:ContentPlaceHolder>
+    <div id="general-content">            
+            <asp:ContentPlaceHolder ID="UserHeader" runat="server">
+                 <nav>
+                    <ul class="nav nav-pills">
+                        <li role="presentation"><a href="user_register_marathon.aspx">Inscribirse a una Maraton</a></li>
+                        <li role="presentation"><a href="user_marathon_records.aspx">Ver historial de Maratones</a></li>
+                        <li role="presentation"><a href="user_edit.aspx">Administrar datos de Usuario</a></li>
+                        <li role="presentation"><a href="/index.aspx">Cerrar sesion</a></li>
+                    </ul>
+                </nav>
+            </asp:ContentPlaceHolder>
         
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             
@@ -28,10 +40,10 @@
         
     </div>
     <footer>
-        <p>Universidad Nacional de La Matanza.</p>
-        <p>Dpto. de Ingeniería e Investigaciones Tecnológicas.</p>
-        ­<p>Tecnicatura en Desarrollo Web ­ Programación Web III</p>
-        ­<p>Integrantes : Roberto Braile - Karina Obermeier - Maria Laura Tula</p>
+        <div><asp:Label ID="texto1" runat="server" Text="Label"></asp:Label></div>
+        <div><asp:Label ID="texto2" runat="server" Text="Label"></asp:Label></div>
+        <div><asp:Label ID="texto3" runat="server" Text="Label"></asp:Label></div>
+        <div><asp:Label ID="texto4" runat="server" Text="Label"></asp:Label></div>
     </footer>
 </body>
 </html>

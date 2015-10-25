@@ -16,22 +16,23 @@
     </asp:ContentPlaceHolder>
 </head>
 <body class="login">
-    <header>
-        <h1>Login de Usuario</h1>
-    </header>
+    <asp:ContentPlaceHolder ID="userTitle" runat="server">  
+        <header>
+            <h1>Login de Usuario</h1>
+        </header>          
+    </asp:ContentPlaceHolder>
     <div id="general-content">
         <form id="login" runat="server">
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">            
             </asp:ContentPlaceHolder>
         </form>
-        <asp:Label ID="mensaje" runat="server" Text="Label"></asp:Label>
+        
     </div>
     <footer>
-        <p>Universidad Nacional de La Matanza.</p>
-        <p>Dpto. de Ingeniería e Investigaciones Tecnológicas.</p>
-        ­<p>Tecnicatura en Desarrollo Web ­ Programación Web III</p>
-        ­<p>Integrantes : Roberto Braile - Karina Obermeier - Maria Laura Tula</p>
+        <div><asp:Label ID="texto1" runat="server" Text="Label"></asp:Label></div>
+        <div><asp:Label ID="texto2" runat="server" Text="Label"></asp:Label></div>
+        <div><asp:Label ID="texto3" runat="server" Text="Label"></asp:Label></div>
+        <div><asp:Label ID="texto4" runat="server" Text="Label"></asp:Label></div>
     </footer>
 </body>
 </html>

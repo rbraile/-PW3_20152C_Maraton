@@ -59,7 +59,12 @@
                 Fecha de Nacimiento</label>
             <div class="col-sm-7">
                 <asp:TextBox CssClass="form-control" ID="TextBox5" runat="server"></asp:TextBox>
-                <asp:CustomValidator CssClass="error" ControlToValidate="TextBox5" ClientValidationFunction="validateDate" Display="Dynamic" ValidationGroup="AllValidators" ID="validarFecha" runat="server" ErrorMessage="La fecha debe tener el siguiente formato dd-mm-aaaa">
+                <asp:CustomValidator CssClass="error" 
+                    ControlToValidate="TextBox5"
+                     ClientValidationFunction="validateDate" Display="Dynamic" 
+                    ValidationGroup="AllValidators" 
+                    ID="validarFecha" 
+                    runat="server" ErrorMessage="La fecha debe tener el siguiente formato dd-mm-aaaa">
                 </asp:CustomValidator>
                 <asp:RequiredFieldValidator CssClass="error" ControlToValidate="TextBox5" ID="RequiredFieldValidator5" runat="server" ErrorMessage="Este campo es obligatorio"></asp:RequiredFieldValidator>
             </div>

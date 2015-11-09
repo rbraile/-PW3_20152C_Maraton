@@ -9,9 +9,9 @@
             <div class="form-group">
                 <label for="inputEmail3" class="col-sm-2 control-label">Usuario</label>
                 <div class="col-sm-10">
-                    <asp:TextBox CssClass="form-control" ID="user_name" runat="server"></asp:TextBox>
+                    <asp:TextBox CssClass="form-control" ID="usuario_nombre" runat="server"></asp:TextBox>
                     <asp:RequiredFieldValidator CssClass="error" ID="RequiredFieldValidator1" 
-                        ControlToValidate="user_name" runat="server" Display="Dynamic" 
+                        ControlToValidate="usuario_nombre" runat="server" Display="Dynamic" 
                         ErrorMessage="Este campo es obligatorio">
                     </asp:RequiredFieldValidator>
                 </div>
@@ -19,16 +19,17 @@
               <div class="form-group">
                 <label for="inputPassword3" class="col-sm-2 control-label">Clave</label>
                 <div class="col-sm-10">
-                     <asp:TextBox CssClass="form-control" ID="user_clave" runat="server" TextMode="Password"></asp:TextBox>
+                     <asp:TextBox CssClass="form-control" ID="usuario_clave" runat="server" TextMode="Password"></asp:TextBox>
                     <asp:RequiredFieldValidator CssClass="error" ID="RequiredFieldValidator2" runat="server" 
-                        ControlToValidate="user_clave" Display="Dynamic" ErrorMessage="Este campo es obligatorio">
+                        ControlToValidate="usuario_clave" Display="Dynamic" ErrorMessage="Este campo es obligatorio">
                     </asp:RequiredFieldValidator>
-                    <asp:CustomValidator ControlToValidate="user_clave" CssClass="error"
+                    <asp:CustomValidator ControlToValidate="usuario_clave" CssClass="error"
                         ClientValidationFunction="clave_validacion" 
                          EnableClientScript="true"   Display="Dynamic"
                         ID="CustomValidator1" runat="server" ErrorMessage="La clave debe tener al menos 8 caracteres"></asp:CustomValidator>
                 </div>
               </div>
+            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
               <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">
                   <asp:Button CssClass="btn btn-default" ID="Login_user" runat="server" Text="Login" OnClick="login_user" />

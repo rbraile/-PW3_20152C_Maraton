@@ -13,13 +13,13 @@ namespace PW3_20152C_Maraton {
     public partial class login {
         
         /// <summary>
-        /// Control user_name.
+        /// Control usuario_nombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox user_name;
+        protected global::System.Web.UI.WebControls.TextBox usuario_nombre;
         
         /// <summary>
         /// Control RequiredFieldValidator1.
@@ -31,13 +31,13 @@ namespace PW3_20152C_Maraton {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
         
         /// <summary>
-        /// Control user_clave.
+        /// Control usuario_clave.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox user_clave;
+        protected global::System.Web.UI.WebControls.TextBox usuario_clave;
         
         /// <summary>
         /// Control RequiredFieldValidator2.
@@ -56,6 +56,15 @@ namespace PW3_20152C_Maraton {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CustomValidator CustomValidator1;
+        
+        /// <summary>
+        /// Control Label1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
         /// Control Login_user.

@@ -9,43 +9,8 @@
       </div>
       <form id="registerMaraton" runat="server">
           <div class="panel panel-default">
-              <div class="panel-heading">Maratones disponibles</div>  
-              <table id="marathones" class="table" runat="server">
-                <thead>
-                    <tr>
-                        <th>Lugar</th>
-                        <th>Distancia</th>
-                        <th>Fecha</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>La Matanza</td>
-                        <td>10k</td>
-                        <td>11-10-2015</td>
-                        <td><asp:LinkButton Text="Inscribirse" runat="server" OnClick="registerMarathon" /></td>
-                    </tr>
-                    <tr>
-                        <td>La Matanza</td>
-                        <td>10k</td>
-                        <td>11-10-2015</td>
-                        <td><asp:LinkButton ID="LinkButton1" Text="Inscribirse" runat="server" OnClick="registerMarathon" /></td>
-                    </tr>
-                    <tr>
-                        <td>La Matanza</td>
-                        <td>10k</td>
-                        <td>11-10-2015</td>
-                        <td><asp:LinkButton ID="LinkButton2" Text="Inscribirse" runat="server" OnClick="registerMarathon" /></td>
-                    </tr>
-                    <tr>
-                        <td>La Matanza</td>
-                        <td>10k</td>
-                        <td>11-10-2015</td>
-                        <td><asp:LinkButton ID="LinkButton3" Text="Inscribirse" runat="server" OnClick="registerMarathon" /></td>
-                    </tr>          
-                </tbody>
-              </table>
+              <div class="panel-heading">Maratones disponibles</div>
+              <asp:GridView ID="maratones" runat="server"></asp:GridView>
             </div>
      </form>
         

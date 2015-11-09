@@ -9,6 +9,7 @@ namespace PW3_20152C_Maraton
 {
     public partial class newUser_registration : System.Web.UI.Page
     {
+        public PW3_20152C_TP2_MaratonesEntities contexto = new PW3_20152C_TP2_MaratonesEntities();
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -16,7 +17,17 @@ namespace PW3_20152C_Maraton
 
         protected void new_user(object sender, EventArgs e)
         {
-            Response.Redirect("/newUser_registration_confirm.aspx");
+            var UserRep = new UsuarioRepositorio(contexto);
+            Usuario user = new Usuario();
+            user.Apellido = apellido.Text;
+            user.Nombre = nombre.Text;
+            user.Email = email.Text;
+            user.Contrasenia = clave.Text;
+            user.Admin = false;
+            user.LugarResidencia = residencia.Text;
+            user.FechaNac =  Convert.ToDateTime(fechaNac.Text);
+            
+            UserRep.Crear(user);
         }
     }
 }

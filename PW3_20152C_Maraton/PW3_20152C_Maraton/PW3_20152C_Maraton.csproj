@@ -218,6 +218,7 @@
     <Compile Include="admin_marathonResultUpload_confirm.aspx.designer.cs">
       <DependentUpon>admin_marathonResultUpload_confirm.aspx</DependentUpon>
     </Compile>
+    <Compile Include="clases\Md5.cs" />
     <Compile Include="dal\MaratonRepositorio.cs" />
     <Compile Include="dal\UsuarioRepsitorio.cs" />
     <Compile Include="index.aspx.cs">

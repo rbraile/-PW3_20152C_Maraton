@@ -7,22 +7,23 @@ namespace PW3_20152C_Maraton
 {
     public class MaratonRepositorio
     {
-        public PW3_20152C_TP2_MaratonesEntities contexto2 { get; set; }
+        public PW3_20152C_TP2_MaratonesEntities contexto { get; set; }
 
-        public MaratonRepositorio(PW3_20152C_TP2_MaratonesEntities contexto2)
+        public MaratonRepositorio(PW3_20152C_TP2_MaratonesEntities contexto)
         {
-            this.contexto2 = contexto2;
+            this.contexto = contexto;
         }
 
         public int Crear(Maraton maraton)
         {
-            contexto2.Maraton.Add(maraton);
-            contexto2.SaveChanges();
+            contexto.Maraton.Add(maraton);
+            contexto.SaveChanges();
             return maraton.IdMaraton;
         }
 
-        public List<Maraton> getMaratones() {
-            return (from maratones in contexto2.Maraton select maratones).ToList();
+        public List<Maraton> getMaratones()
+        {
+            return (from maratones in contexto.Maraton select maratones).ToList();
         }
     }
 }

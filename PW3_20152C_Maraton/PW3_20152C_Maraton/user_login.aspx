@@ -26,7 +26,7 @@
                     <asp:CustomValidator ControlToValidate="usuario_clave" CssClass="error"
                         ClientValidationFunction="clave_validacion" 
                          EnableClientScript="true"   Display="Dynamic"
-                        ID="CustomValidator1" runat="server" ErrorMessage="La clave debe tener al menos 8 caracteres"></asp:CustomValidator>
+                        ID="CustomValidator1" runat="server" ErrorMessage="La clave debe tener al menos 3 caracteres"></asp:CustomValidator>
                 </div>
               </div>
             <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>

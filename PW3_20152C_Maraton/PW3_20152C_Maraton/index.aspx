@@ -4,9 +4,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <nav>
         <ul class="nav nav-pills">
-            <li role="presentation"><a href="/user_login.aspx">Ingresar como Usuario</a></li>
+            <li role="presentation"><a href="/user_login.aspx">Iniciar Sesión</a></li>
             <li role="presentation"><a href="/newUser_registration.aspx">Registrarse</a></li>
-            <li role="presentation"><a href="/admin_login.aspx">Ingresar como Administrador</a></li>
+            <!--<li role="presentation"><a href="/admin_login.aspx">Ingresar como Administrador</a></li>-->
         </ul>
     </nav>
     <div class="panel panel-default">

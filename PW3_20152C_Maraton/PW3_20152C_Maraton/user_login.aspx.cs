@@ -29,22 +29,26 @@ namespace PW3_20152C_Maraton
                         Usuario usuario = usuarioRep.getUsuario(usuario_nombre.Text, clavehash);
                         Session["usuarioId"] = usuario.IdUsuario;
                         Session["usuarioNombre"] = usuario.Nombre;
-                        if (usuario.Admin)
+                        
+                        if (usuario.Admin==true)
                         {
-                            Session["usuarioNivel"] = "Admin";
+                            Session["usuarioNivel"] = "Administrador";
+                            Response.Redirect("/admin_index.aspx");
                         }
                         else
                         {
-                            Session["usuarioNivel"] = "usuario";
+                            Session["usuarioNivel"] = "Usuario";
+                            Response.Redirect("/user_index.aspx");
+
                         }
                         
-                        // Label1.Text = " " + Session["nombreUsusario"];
-                        Response.Redirect("/user_index.aspx");
+                        //Label1.Text = " " + Session["ususarioNombre"];
+                        //Response.Redirect("/user_index.aspx");
                     }
                     catch
                     {
-                        Label1.Text = "error";
-                    }
+                        Console.WriteLine("Error");
+                  }
                 }
             }
         }

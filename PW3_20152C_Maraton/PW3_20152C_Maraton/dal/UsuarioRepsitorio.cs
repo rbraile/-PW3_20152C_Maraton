@@ -23,7 +23,7 @@ namespace PW3_20152C_Maraton
 
         public Usuario getUsuario(string nombre, string clave)
         {
-            Usuario usua = (from usuario in contexto.Usuario where usuario.Nombre == nombre && usuario.Contrasenia == clave select usuario).First();
+            Usuario usua = (from Usuario in contexto.Usuario where Usuario.Nombre == nombre && Usuario.Contrasenia == clave select Usuario).First();
 
             return usua;
         }

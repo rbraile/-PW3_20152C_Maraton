@@ -24,9 +24,27 @@ namespace PW3_20152C_Maraton
                     string clavehash = md5.GetMd5Hash(md5clave);
 
                     var usuarioRep = new UsuarioRepositorio(contexto);
-                    Usuario usuario = usuarioRep.getUsuario(usuario_nombre.Text, clavehash);
-                    Label1.Text = usuario.IdUsuario.ToString();
-                    //Response.Redirect("/user_index.aspx");
+                    try
+                    {
+                        Usuario usuario = usuarioRep.getUsuario(usuario_nombre.Text, clavehash);
+                        Session["usuarioId"] = usuario.IdUsuario;
+                        Session["usuarioNombre"] = usuario.Nombre;
+                        if (usuario.Admin)
+                        {
+                            Session["usuarioNivel"] = "Admin";
+                        }
+                        else
+                        {
+                            Session["usuarioNivel"] = "usuario";
+                        }
+                        
+                        // Label1.Text = " " + Session["nombreUsusario"];
+                        Response.Redirect("/user_index.aspx");
+                    }
+                    catch
+                    {
+                        Label1.Text = "error";
+                    }
                 }
             }
         }

@@ -220,6 +220,7 @@
     </Compile>
     <Compile Include="clases\Md5.cs" />
     <Compile Include="dal\MaratonRepositorio.cs" />
+    <Compile Include="dal\ResultadoRepositorio.cs" />
     <Compile Include="dal\UsuarioRepsitorio.cs" />
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>

@@ -12,8 +12,10 @@
               <div class="panel-heading">Maratones disponibles</div>
               <asp:GridView AutoGenerateEditButton="false" CssClass="table"
                   AutoGenerateSelectButton="false" 
-                  AutoGenerateColumns="False" 
-                  ID="maratones" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" OnSelectedIndexChanged="maratones_SelectedIndexChanged">
+                  AutoGenerateColumns="False"
+                  OnRowCommand="seleccion_maraton_command"
+                  ID="maratones" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" 
+                  OnSelectedIndexChanged="maratones_SelectedIndexChanged">
                   <AlternatingRowStyle BackColor="White" />
                   <EditRowStyle BackColor="#2461BF" />
                   <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
@@ -35,8 +37,9 @@
                         HeaderText="Fecha de comienzo" SortExpression="Comienzo" />
                     <asp:TemplateField>
                      <ItemTemplate>
-                        <asp:HyperLink CssClass="btn btn-default" ID="HyperLink1" runat="server" NavigateUrl='<%#"~/agregarAMaraton.aspx?ID="+Eval("IdMaraton") %>'
-                        Text="Go!"></asp:HyperLink>
+                         <asp:LinkButton CssClass="btn btn-default" runat="server" 
+                             ID="SuscribirMe" CommandArgument='<%#Eval("IdMaraton") %>'
+                             CommandName="suscribir">Suscribir me</asp:LinkButton>
                      </ItemTemplate>
 </asp:TemplateField>
                   </Columns>          

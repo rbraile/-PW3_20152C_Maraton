@@ -31,13 +31,13 @@ namespace PW3_20152C_Maraton {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator7;
         
         /// <summary>
-        /// Control max_participants.
+        /// Control max_participantes.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox max_participants;
+        protected global::System.Web.UI.WebControls.TextBox max_participantes;
         
         /// <summary>
         /// Control RequiredFieldValidator1.

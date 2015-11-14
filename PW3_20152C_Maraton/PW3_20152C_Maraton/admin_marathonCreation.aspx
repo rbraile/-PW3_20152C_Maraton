@@ -19,11 +19,11 @@
             <label class="col-sm-5 control-label">
                Cantidad Maxima de Participantes</label>
             <div class="col-sm-7">
-                <asp:TextBox CssClass="form-control" ID="max_participants" runat="server"></asp:TextBox>
-                <asp:RequiredFieldValidator CssClass="error" ID="RequiredFieldValidator1" ControlToValidate="max_participants"
+                <asp:TextBox CssClass="form-control" ID="max_participantes" runat="server"></asp:TextBox>
+                <asp:RequiredFieldValidator CssClass="error" ID="RequiredFieldValidator1" ControlToValidate="max_participantes"
                     runat="server" Display="Dynamic" ErrorMessage="Este campo es obligatorio"></asp:RequiredFieldValidator>
                 <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" CssClass="error"
-                            ControlToValidate="max_participants" ErrorMessage="Ingrese Valores Numericos"
+                            ControlToValidate="max_participantes" ErrorMessage="Ingrese Valores Numericos"
                             ValidationExpression="^[0-9]*">
                 </asp:RegularExpressionValidator>
             </div>

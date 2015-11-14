@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b3add6ed053b4bd493aef8eed3e7dc17" Name="Diagrama1">
+        <EntityTypeShape EntityType="PW3_20152C_TP2_MaratonesModel.Maraton" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="PW3_20152C_TP2_MaratonesModel.ResultadoMaratonParticipante" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PW3_20152C_TP2_MaratonesModel.Usuario" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <AssociationConnector Association="PW3_20152C_TP2_MaratonesModel.FK_ResultadoMaratonParticipante_Maraton" ManuallyRouted="false" />
+        <AssociationConnector Association="PW3_20152C_TP2_MaratonesModel.FK_ResultadoMaratonParticipante_Usuario" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

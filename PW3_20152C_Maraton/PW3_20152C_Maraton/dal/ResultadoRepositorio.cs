@@ -33,7 +33,7 @@ namespace PW3_20152C_Maraton
             return false;
         }
 
-        public Maraton getCantidadDeUsuarios(int idMaraton)
+        public int getCantidadDeUsuarios(int idMaraton)
         {
             return (from resultado in contexto.ResultadoMaratonParticipante
                     where resultado.IdMaraton == idMaraton

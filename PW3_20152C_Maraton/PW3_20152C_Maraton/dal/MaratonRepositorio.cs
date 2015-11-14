@@ -47,7 +47,7 @@ namespace PW3_20152C_Maraton
             return maratonFiltro;
         }
 
-        public Maraton getMaratonesById(int idMaraton)
+        public Maraton getMaratonById(int idMaraton)
         {
             return (from maraton in contexto.Maraton where maraton.IdMaraton == idMaraton select maraton).Single();
         }

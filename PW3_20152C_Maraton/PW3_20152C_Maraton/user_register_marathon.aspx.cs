@@ -57,7 +57,7 @@ namespace PW3_20152C_Maraton
                 LinkButton btn = (LinkButton)e.CommandSource;
                 Int32 IdMaraton = Convert.ToInt32(btn.CommandArgument);
                 Int32 IdUsuario = Convert.ToInt32(Session["usuarioId"]);
-                String numero = Convert.ToString(IdMaraton) + "" +  Convert.ToString(IdUsuario);
+                String numero = Convert.ToString(IdMaraton) + Convert.ToString(IdUsuario);
                 using (PW3_20152C_TP2_MaratonesEntities contexto = new PW3_20152C_TP2_MaratonesEntities())
                 {
                     var resultadoRep = new ResultadoRepositorio(contexto);
@@ -66,14 +66,31 @@ namespace PW3_20152C_Maraton
                     ResultadoMaratonParticipante resultado = new ResultadoMaratonParticipante();
                     resultado.IdUsuario = IdUsuario;
                     resultado.IdMaraton = IdMaraton;
-                    int cantidadUsuarios = resultadoRep.getCantidadDeUsuarios(IdMaraton);
-                    Maraton maraton = maratonRep.getMaratonesById(IdMaraton);
-
 
                     if (!resultadoRep.VerificarYaInscripto(IdUsuario, IdMaraton))
                     {
-                        resultado.NroInscripcion = Convert.ToInt32(numero);
-                        resultadoRep.agregarParticipante(resultado);
+                        int cantidadUsuarios = resultadoRep.getCantidadDeUsuarios(IdMaraton);
+                        Maraton maraton = maratonRep.getMaratonById(IdMaraton);
+                        int cantMaxima = Convert.ToInt32(maraton.MaxParticipantes);
+                        int cantEspera = Convert.ToInt32(maraton.ParticipantesEnEspera);
+
+                        if (cantidadUsuarios < (cantMaxima + cantEspera) )
+                        {
+                            if (cantidadUsuarios < cantMaxima)
+                            {
+                                resultado.NroInscripcion = Convert.ToInt32(numero);
+                                resultadoRep.agregarParticipante(resultado);
+
+                            }
+                            else
+                            {
+                                resultado.NroInscripcion = Convert.ToInt32(numero);
+                                resultadoRep.agregarParticipante(resultado);
+                            }
+                        }
+
+                   
+
 
                     }
                     else {

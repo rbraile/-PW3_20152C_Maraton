@@ -10,48 +10,24 @@
         </ul>
     </nav>
     <div class="panel panel-default">
-      <div class="panel-heading">Resultado ultima maraton</div>
-      <table class="table">
-        <thead>
-            <tr>
-                <th>puesto</th>
-                <th>DORSAL</th>
-                <th>Nombre y apellido</th>
-                <th>Tiempo</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>1</td>
-                <td>Juan Perez</td>
-                <td>1:10:30</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>1</td>
-                <td>Juan Perez</td>
-                <td>1:10:30</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>1</td>
-                <td>Juan Perez</td>
-                <td>1:10:30</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>1</td>
-                <td>Juan Perez</td>
-                <td>1:10:30</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>1</td>
-                <td>Juan Perez</td>
-                <td>1:10:30</td>
-            </tr>
-        </tbody>
-      </table>
+        <form runat="server">
+            <div class="panel-heading">
+                Resultado ultima maraton <strong><asp:Label runat="server" ID="nombre"></asp:Label></strong>
+            </div>
+             <asp:GridView CssClass="table" runat="server" ID="Resultados">
+                <AlternatingRowStyle BackColor="White" />
+                  <EditRowStyle BackColor="#2461BF" />
+                  <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                  <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                  <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+                  <RowStyle BackColor="#EFF3FB" />
+                  <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
+                  <SortedAscendingCellStyle BackColor="#F5F7FB" />
+                  <SortedAscendingHeaderStyle BackColor="#6D95E1" />
+                  <SortedDescendingCellStyle BackColor="#E9EBEF" />
+                  <SortedDescendingHeaderStyle BackColor="#4870BE" />
+            </asp:GridView>
+           
+        </form>
     </div>
 </asp:Content>

@@ -9,8 +9,8 @@
                 <label for="inputEmail3" class="col-sm-5 control-label">
                     Nombre</label>
                 <div class="col-sm-7">
-                    <asp:TextBox CssClass="form-control" ID="TextBox3" runat="server">Juan</asp:TextBox>
-                    <asp:RequiredFieldValidator CssClass="error" ID="RequiredFieldValidator3" ControlToValidate="TextBox3"
+                    <asp:TextBox CssClass="form-control" ID="nombre" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator CssClass="error" ID="RequiredFieldValidator3" ControlToValidate="nombre"
                         runat="server" Display="Dynamic" ErrorMessage="Este campo es obligatorio"></asp:RequiredFieldValidator>
                 </div>
             </div>
@@ -18,27 +18,17 @@
                 <label for="inputEmail3" class="col-sm-5 control-label">
                     Apellido</label>
                 <div class="col-sm-7">
-                    <asp:TextBox CssClass="form-control" ID="TextBox4" runat="server">Perez</asp:TextBox>
-                    <asp:RequiredFieldValidator CssClass="error" ID="RequiredFieldValidator4" ControlToValidate="TextBox4"
+                    <asp:TextBox CssClass="form-control" ID="apellido" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator CssClass="error" ID="RequiredFieldValidator4" ControlToValidate="apellido"
                         runat="server" Display="Dynamic" ErrorMessage="Este campo es obligatorio"></asp:RequiredFieldValidator>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="inputEmail3" class="col-sm-5 control-label">
-                    Email:</label>
-                <div class="col-sm-7">
-                    <asp:TextBox CssClass="form-control" ID="Email" runat="server"></asp:TextBox>
-                    <asp:RequiredFieldValidator CssClass="error" ID="RequiredFieldValidator7" ControlToValidate="Email"
-                        runat="server" Display="Dynamic" ErrorMessage="Este campo es obligatorio"></asp:RequiredFieldValidator>
-                    <asp:RegularExpressionValidator ID="RegularExpressionEmail" CssClass="error" runat="server" ErrorMessage="Email invalido." ControlToValidate="Email" ValidationExpression="^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$" />
                 </div>
             </div>
             <div class="form-group">
                 <label for="inputEmail3" class="col-sm-5 control-label">
                     Fecha de Nacimiento</label>
                 <div class="col-sm-7">
-                    <asp:TextBox CssClass="form-control" ID="TextBox5" runat="server">11-10-1990</asp:TextBox>
-                    <asp:CustomValidator CssClass="error" ControlToValidate="TextBox5" 
+                    <asp:TextBox CssClass="form-control" ID="fecha" runat="server"></asp:TextBox>
+                    <asp:CustomValidator CssClass="error" ControlToValidate="fecha" 
                         ClientValidationFunction="validateDate" Display="Dynamic" 
                         ValidationGroup="AllValidators" ID="validarFecha" runat="server" ErrorMessage="La fecha debe tener el siguiente formato dd-mm-aaaa">
 
@@ -49,8 +39,8 @@
                 <label for="inputEmail3" class="col-sm-5 control-label">
                     Lugar de Residencia</label>
                 <div class="col-sm-7">
-                    <asp:TextBox CssClass="form-control" ID="TextBox6" runat="server">La Matanza</asp:TextBox>
-                    <asp:RequiredFieldValidator CssClass="error" ID="RequiredFieldValidator6" ControlToValidate="TextBox6"
+                    <asp:TextBox CssClass="form-control" ID="lugar" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator CssClass="error" ID="RequiredFieldValidator6" ControlToValidate="lugar"
                         runat="server" Display="Dynamic" ErrorMessage="Este campo es obligatorio"></asp:RequiredFieldValidator>
                 </div>
             </div>
@@ -61,6 +51,7 @@
                 <a class="btn btn-default" href="user_index.aspx">Cancelar</a>
             </div>
         </div>
+        <label id="cosa" runat="server"></label>
     </form>
 </asp:Content>
  

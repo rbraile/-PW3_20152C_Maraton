@@ -3,6 +3,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="adminIndex_head" runat="server">
     <link rel="stylesheet" href="css/login.css" />
+    <script type="text/javascript" src="scripts/funciones.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="adminIndex_ContentPlaceHolder" runat="server">
     <div class="form-horizontal login-form">
@@ -26,6 +27,15 @@
                             ControlToValidate="max_participantes" ErrorMessage="Ingrese Valores Numericos"
                             ValidationExpression="^[0-9]*">
                 </asp:RegularExpressionValidator>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-5 control-label">Fecha de inicio de la maraton</label>
+            <div class="col-sm-7">
+                <asp:TextBox CssClass="form-control" ID="fecha" runat="server"></asp:TextBox>
+                <asp:CustomValidator ID="CustomValidator1" ControlToValidate="fecha" 
+                    EnableClientScript="true" CssClass="error" ClientValidationFunction="validateDate" runat="server" 
+                    ErrorMessage="Formato de fecha dd-mm-aaaa"></asp:CustomValidator>
             </div>
         </div>
         <div class="form-group">

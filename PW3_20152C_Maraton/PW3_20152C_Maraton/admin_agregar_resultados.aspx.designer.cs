@@ -10,24 +10,24 @@
 namespace PW3_20152C_Maraton {
     
     
-    public partial class home1 {
+    public partial class admin_agregar_resultados {
         
         /// <summary>
-        /// Control Resultados.
+        /// Control participantes.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView Resultados;
+        protected global::System.Web.UI.WebControls.GridView participantes;
         
         /// <summary>
-        /// Control nombre.
+        /// Control label1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label nombre;
+        protected global::System.Web.UI.WebControls.Label label1;
     }
 }

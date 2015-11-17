@@ -27,5 +27,10 @@ namespace PW3_20152C_Maraton
 
             return usua;
         }
+
+        public Usuario getUsuarioById(int usuarioId) {
+            return (from usuario in contexto.Usuario where usuario.IdUsuario == usuarioId select usuario).Single();
+        }
+
     }
 }

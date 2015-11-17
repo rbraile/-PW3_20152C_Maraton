@@ -96,6 +96,7 @@
     </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -121,6 +122,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admin_agregar_resultados.aspx" />
+    <Content Include="admin_edit_resultado.aspx" />
     <Content Include="admin_index.aspx" />
     <Content Include="admin_marathonCreation.aspx" />
     <Content Include="admin_marathonCreation_confirm.aspx" />
@@ -176,6 +179,20 @@
     <Content Include="admin_login.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admin_agregar_resultados.aspx.cs">
+      <DependentUpon>admin_agregar_resultados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_agregar_resultados.aspx.designer.cs">
+      <DependentUpon>admin_agregar_resultados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_edit_resultado.aspx.cs">
+      <DependentUpon>admin_edit_resultado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_edit_resultado.aspx.designer.cs">
+      <DependentUpon>admin_edit_resultado.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin_index.aspx.cs">
       <DependentUpon>admin_index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -219,6 +236,8 @@
       <DependentUpon>admin_marathonResultUpload_confirm.aspx</DependentUpon>
     </Compile>
     <Compile Include="clases\Md5.cs" />
+    <Compile Include="clases\ResultadoParticipante.cs" />
+    <Compile Include="clases\UltimaMaraton.cs" />
     <Compile Include="dal\MaratonRepositorio.cs" />
     <Compile Include="dal\ResultadoRepositorio.cs" />
     <Compile Include="dal\UsuarioRepsitorio.cs" />
@@ -366,6 +385,9 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

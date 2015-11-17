@@ -2,12 +2,16 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="userIndex_head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">           
-    <div id="confirm2" runat="server" class="alert alert-success confirm-content" role="alert">
+    
+      <form id="registerMaraton" runat="server">
+
+          <div id="confirm2" runat="server" class="alert alert-success confirm-content" role="alert">
           <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
           <span class="sr-only">Success:</span>
             Se ha registrado exitosamente a la maraton <a href="user_index.aspx">Volver</a>
       </div>
-      <form id="registerMaraton" runat="server">
+
+
           <div class="panel panel-default">
               <div class="panel-heading">Maratones disponibles</div>
               <asp:GridView AutoGenerateEditButton="false" CssClass="table"
@@ -36,17 +40,32 @@
                     <asp:BoundField DataField="FechaHorarioComienzo" 
                         HeaderText="Fecha de comienzo" SortExpression="Comienzo" />
                     <asp:TemplateField>
-                     <ItemTemplate>
-                         <asp:LinkButton CssClass="btn btn-default" runat="server" 
-                             ID="SuscribirMe" CommandArgument='<%#Eval("IdMaraton") %>'
-                             CommandName="suscribir">Suscribir me</asp:LinkButton>
-                     </ItemTemplate>
-</asp:TemplateField>
+                         <ItemTemplate>
+                             <asp:LinkButton CssClass="btn btn-default" runat="server" 
+                                 ID="SuscribirMe" CommandArgument='<%#Eval("IdMaraton") %>'
+                                 CommandName="suscribir">Suscribir me</asp:LinkButton>
+                         </ItemTemplate>
+                    </asp:TemplateField>
                   </Columns>          
             </asp:GridView>
             </div>
-          <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-          <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+
      </form>
+    <div id="message_ok" runat="server" class="alert alert-success" role="alert">
+        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+        <span class="sr-only">Success:</span>Se ha registrado exitosamente a la maraton
+        <label id="datos_maraton" runat="server"></label>
+        <a href="user_index.aspx">Volver</a>
+    </div>
+    <div id="message_error" runat="server" class="alert alert-error confirm-content" role="alert">
+        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        <span class="sr-only">Success:</span>
+        <label id="txtMessage" runat="server"></label>
+    </div>
+    <div id="message_warning" runat="server" class="alert alert-warning" role="alert">
+        <span class="glyphicon glyphicon-warning" aria-hidden="true"></span>
+        <span class="sr-only">Warning:</span>
+        Se ha registrado pero esta en lista de espera de la maraton <a href="user_index.aspx">Volver</a>
         
+    </div>
 </asp:Content>

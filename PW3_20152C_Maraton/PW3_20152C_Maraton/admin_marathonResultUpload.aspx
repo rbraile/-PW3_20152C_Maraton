@@ -4,54 +4,42 @@
     <link rel="stylesheet" href="css/login.css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="adminIndex_ContentPlaceHolder" runat="server">
-    <div class="form-horizontal login-form">
-        <div class="form-group">
-            <label for="inputEmail3" class="col-sm-12 control-label">
-                Dorsal Numero: 1</label>
-             <label for="inputEmail3" class="col-sm-12 control-label">
-                Nombre y Apellido: Juan Perez</label>   
-            <label for="inputEmail3" class="col-sm-5 control-label">
-                Posicion de llegada</label>
-            <div class="col-sm-7">
-                <asp:TextBox CssClass="form-control" ID="finish_position" runat="server"></asp:TextBox>
-                <asp:RequiredFieldValidator CssClass="error" ID="RequiredFieldValidator7" ControlToValidate="finish_position"
-                    runat="server" Display="Dynamic" ErrorMessage="Este campo es obligatorio"></asp:RequiredFieldValidator>
-                <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" CssClass="error"
-                            ControlToValidate="finish_position" ErrorMessage="Ingrese Valores Numericos"
-                            ValidationExpression="^[0-9]*">
-                </asp:RegularExpressionValidator>
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="inputEmail3" class="col-sm-5 control-label">
-                Tiempo de llegada</label>
-            <div class="col-sm-7">
-                <asp:TextBox CssClass="form-control" ID="finish_time" runat="server"></asp:TextBox>
-                <asp:RequiredFieldValidator CssClass="error" ID="RequiredFieldValidator1" ControlToValidate="finish_time"
-                    runat="server" Display="Dynamic" ErrorMessage="Este campo es obligatorio"></asp:RequiredFieldValidator>
-                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" CssClass="error"
-                            ControlToValidate="finish_time" ErrorMessage="Ingrese Valores Numericos"
-                            ValidationExpression="^[0-9]*">
-                </asp:RegularExpressionValidator>
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="inputEmail3" class="col-sm-5 control-label">
-                Finalizó la carrera?</label>
-            <div class="col-sm-7">
-                <asp:DropDownList ID="finish_flag" runat="server">
-                    <asp:ListItem Value="Si"></asp:ListItem>
-                    <asp:ListItem Value="No"></asp:ListItem>
-                </asp:DropDownList>
-                <asp:RequiredFieldValidator CssClass="error" ID="RequiredFieldValidator2" ControlToValidate="finish_flag"
-                    runat="server" Display="Dynamic" ErrorMessage="Este campo es obligatorio"></asp:RequiredFieldValidator>
-            </div>
-        </div>        
-        <div class="form-group">
-            <div class="col-sm-offset-5 col-sm-12">
-                <asp:Button CssClass="btn btn-default" ID="Button1" runat="server" Text="Cargar Resultados"
-                    OnClick="upload_result" />
-                <a class="btn btn-default" href="admin_index.aspx">Cancelar</a>
-            </div>
-        </div>
-    </div></asp:Content>
+    <div class="panel panel-default">
+        <div class="panel-heading">Maratones disponibles</div>
+        <asp:GridView AutoGenerateEditButton="false" CssClass="table"
+            AutoGenerateSelectButton="false" 
+            AutoGenerateColumns="False"
+            ID="maratones" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" 
+            >
+            <AlternatingRowStyle BackColor="White" />
+            <EditRowStyle BackColor="#2461BF" />
+            <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+            <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+            <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+            <RowStyle BackColor="#EFF3FB" />
+            <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
+            <SortedAscendingCellStyle BackColor="#F5F7FB" />
+            <SortedAscendingHeaderStyle BackColor="#6D95E1" />
+            <SortedDescendingCellStyle BackColor="#E9EBEF" />
+            <SortedDescendingHeaderStyle BackColor="#4870BE" />
+                  
+            <Columns>
+                <asp:BoundField DataField="Nombre" 
+                    HeaderText="Nombre" SortExpression="Nombre" />
+                <asp:BoundField DataField="LugarSalida" 
+                    HeaderText="Lugar de Salida" SortExpression="Lugar Salida" />
+                <asp:BoundField DataField="FechaHorarioComienzo" 
+                    HeaderText="Fecha de comienzo" SortExpression="Comienzo" />
+                 <asp:BoundField DataField="IdMaraton" 
+                    HeaderText="id maraton" SortExpression="IdMaraton" />
+                    <asp:TemplateField>
+                            <ItemTemplate>
+                                 <asp:HyperLink runat="server" Text="Agregar resultados" 
+                                     NavigateUrl='<%# "admin_agregar_resultados.aspx?maratonId=" + Eval("IdMaraton") %>'>
+                                 </asp:HyperLink>
+                            </ItemTemplate>
+                    </asp:TemplateField>
+            </Columns>          
+        </asp:GridView>
+    </div>
+</asp:Content>

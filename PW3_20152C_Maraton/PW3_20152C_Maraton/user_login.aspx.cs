@@ -32,14 +32,13 @@ namespace PW3_20152C_Maraton
                         if (usuario.Admin)
                         {
                             Session["usuarioNivel"] = "Admin";
+                            Response.Redirect("/admin_index.aspx");
                         }
                         else
                         {
                             Session["usuarioNivel"] = "usuario";
+                            Response.Redirect("/user_index.aspx");
                         }
-                        
-                        // Label1.Text = " " + Session["nombreUsusario"];
-                        Response.Redirect("/user_index.aspx");
                     }
                     catch
                     {

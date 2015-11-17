@@ -13,6 +13,9 @@ namespace PW3_20152C_Maraton
         
         protected void Page_Load(object sender, EventArgs e)
         {
+            message_ok.Visible = false;
+            message_error.Visible = false;
+            message_warning.Visible = false;
             try
             {
 
@@ -22,7 +25,6 @@ namespace PW3_20152C_Maraton
                     {
                         confirm2.Visible = false;
                         var maratonRep = new MaratonRepositorio(contexto);
-                        //maratones.DataSource = maratonRep.getMaratonesPermitidas(Convert.ToInt32(Session["usuarioId"]));
                         maratones.DataSource = maratonRep.getMaratones();
                         maratones.DataBind();
                     }
@@ -47,7 +49,7 @@ namespace PW3_20152C_Maraton
         protected void maratones_SelectedIndexChanged(object sender, EventArgs e)
         {
             int id = Convert.ToInt32(e);
-            Label2.Text = id.ToString();
+
         }
 
         protected void seleccion_maraton_command(object sender, GridViewCommandEventArgs e)
@@ -74,27 +76,37 @@ namespace PW3_20152C_Maraton
                         int cantMaxima = Convert.ToInt32(maraton.MaxParticipantes);
                         int cantEspera = Convert.ToInt32(maraton.ParticipantesEnEspera);
 
-                        if (cantidadUsuarios < (cantMaxima + cantEspera) )
+                        if (cantidadUsuarios < (cantMaxima + cantEspera))
                         {
                             if (cantidadUsuarios < cantMaxima)
                             {
                                 resultado.NroInscripcion = Convert.ToInt32(numero);
                                 resultadoRep.agregarParticipante(resultado);
-
+                                datos_maraton.InnerText = "El lugar de la maraton es: <strong>" + maraton.LugarSalida + "</strong>"
+                                + " la fecha de inicio es <strong>" + maraton.FechaHorarioComienzo + "</strong>"
+                                + "Su numero de inscripción es el: <strong>" + numero + "</strong>";
+                                registerMaraton.Visible = false;
+                                message_ok.Visible = true;
                             }
                             else
                             {
                                 resultado.NroInscripcion = Convert.ToInt32(numero);
                                 resultadoRep.agregarParticipante(resultado);
+                                registerMaraton.Visible = false;
+                                message_warning.Visible = true;
                             }
                         }
-
-                   
-
-
+                        else
+                        {
+                            txtMessage.InnerHtml = "Esta maraton no tiene mas cupo <a href='user_index.aspx'>Volver</a>";
+                            registerMaraton.Visible = false;
+                            message_error.Visible = true;
+                        }
                     }
                     else {
-                        Response.Redirect("/error.aspx");
+                        txtMessage.InnerHtml = "Ya esta registrado en esta maraton <a href='user_index.aspx'>Volver</a>";
+                        registerMaraton.Visible = false;
+                        message_error.Visible = true;
                     }
 
 

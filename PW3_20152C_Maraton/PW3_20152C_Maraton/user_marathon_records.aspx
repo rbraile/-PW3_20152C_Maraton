@@ -9,8 +9,19 @@
     
     <div class="panel panel-default">
       <div class="panel-heading">Historial de maratones</div>
-
-        <asp:HiddenField ID="session" runat="server" />
+        <table class="table" id="resultado">
+            <thead>
+                <tr>
+                    <th>Maraton</th>
+                    <th>Posicion Final</th>
+                    <th>Tiempo</th>
+                    <th>Premio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr></tr>
+            </tbody>
+        </table>
 
       </div>
     </form> 

@@ -15,10 +15,17 @@ namespace PW3_20152C_Maraton
             this.contexto = contexto;
         }
 
-        public int agregarParticipante(ResultadoMaratonParticipante resultado) {
+        public int agregarParticipante(ResultadoMaratonParticipante resultado) 
+        {
             contexto.ResultadoMaratonParticipante.Add(resultado);
             contexto.SaveChanges();
             return resultado.IdMaraton;
+        }
+
+        public void agregarParticipanteEnEspera(ResultadoMaratonParticipante resultado) 
+        {
+            resultado.Finalizo = false;
+            this.agregarParticipante(resultado);
         }
 
         public Boolean VerificarYaInscripto(int idUsuario, int idMaraton)
@@ -68,7 +75,7 @@ namespace PW3_20152C_Maraton
             resultadoParticipante.tiempoLlegada = Convert.ToInt32(resultados.TiempoLlegada);
             resultadoParticipante.PosicionFinal = Convert.ToInt32(resultados.PosicionFinal);
             resultadoParticipante.IdMaraton = idMaraton;
-            resultadoParticipante.numeroInscripcion = idMaraton + idUsuario;
+            resultadoParticipante.NroInscripcion = idMaraton + idUsuario;
 
             return resultadoParticipante;
         }

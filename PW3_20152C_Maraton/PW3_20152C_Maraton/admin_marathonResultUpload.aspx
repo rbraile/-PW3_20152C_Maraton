@@ -26,10 +26,13 @@
             <Columns>
                 <asp:BoundField DataField="Nombre" 
                     HeaderText="Nombre" SortExpression="Nombre" />
+
                 <asp:BoundField DataField="LugarSalida" 
                     HeaderText="Lugar de Salida" SortExpression="Lugar Salida" />
+
                 <asp:BoundField DataField="FechaHorarioComienzo" 
                     HeaderText="Fecha de comienzo" SortExpression="Comienzo" />
+
                  <asp:BoundField DataField="IdMaraton" 
                     HeaderText="id maraton" SortExpression="IdMaraton" />
                     <asp:TemplateField>

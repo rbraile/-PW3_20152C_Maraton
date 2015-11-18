@@ -101,6 +101,10 @@ namespace PW3_20152C_Maraton
                             maratonMax = maraton;
                             maratonFiltro.Insert(0, maraton);
                         }
+                        else
+                        {
+                            int a = 1;
+                        }//else
                     }//else if
                     else 
                     {
@@ -129,6 +133,7 @@ namespace PW3_20152C_Maraton
         {
             var dateAndTime = DateTime.Now;
             var date = dateAndTime.Date;
+
             List<MaratonDTO> resultadosParticipante = new List<MaratonDTO>();
             var maratonesDeUsuario = (from maratones in contexto.Maraton
                     join resultados in contexto.ResultadoMaratonParticipante on maratones.IdMaraton equals resultados.IdMaraton
@@ -141,9 +146,10 @@ namespace PW3_20152C_Maraton
                         MaratonNombre = maratones.Nombre,
                         Premio = 0,
                         TiempoLlegada = resultados.TiempoLlegada.Value,
+                        IdMaraton = maratones.IdMaraton,
                         PrimerPremio = maratones.PrimerPremio,
                         SegundoPremio = maratones.SegundoPremio,
-                        TercerPremio = maratones.TercerPremio
+                        TercerPremio = maratones.TercerPremio,
                     });
 
             foreach(MaratonDTO maratonU in maratonesDeUsuario) 

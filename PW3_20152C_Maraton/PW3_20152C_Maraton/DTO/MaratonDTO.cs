@@ -11,6 +11,7 @@ namespace PW3_20152C_Maraton.DTO
         public int? PosicionFinal { get; set; }
         public int? TiempoLlegada { get; set; }
         public int? Premio { get; set; }
+        public int? IdMaraton { get; set; }
         public int? PrimerPremio { get; set; }
         public int? SegundoPremio { get; set; }
         public int? TercerPremio { get; set; }

@@ -14,7 +14,7 @@ namespace PW3_20152C_Maraton.clases
         public int tiempoLlegada { get; set; }
         public int Finalizo { get; set; }
         public String Nombre { get; set; }
-        public int numeroInscripcion { get; set; }
+        public int NroInscripcion { get; set; }
         public int IdUsuario { get; set; }
         public int IdMaraton { get; set; }
     }

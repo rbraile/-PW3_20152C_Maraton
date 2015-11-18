@@ -138,6 +138,7 @@
     <Content Include="maratones_realizadas.asmx" />
     <Content Include="newUser_registration.aspx" />
     <Content Include="newUser_registration_confirm.aspx" />
+    <Content Include="scripts\ajax.js" />
     <Content Include="scripts\funciones.js" />
     <EntityDeploy Include="Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>

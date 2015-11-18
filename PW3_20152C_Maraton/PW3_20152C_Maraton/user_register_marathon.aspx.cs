@@ -89,7 +89,7 @@ namespace PW3_20152C_Maraton
                             else
                             {
                                 resultado.NroInscripcion = Convert.ToInt32(numero);
-                                resultadoRep.agregarParticipante(resultado);
+                                resultadoRep.agregarParticipanteEnEspera(resultado);
                                 registerMaraton.Visible = false;
                                 message_warning.Visible = true;
                             }
@@ -106,14 +106,8 @@ namespace PW3_20152C_Maraton
                         registerMaraton.Visible = false;
                         message_error.Visible = true;
                     }
-
-
-
                 }
-
             }
         }
-
-
     }
 }

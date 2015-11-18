@@ -14,7 +14,7 @@
             <div class="panel-heading">
                 Resultado ultima maraton <strong><asp:Label runat="server" ID="nombre"></asp:Label></strong>
             </div>
-             <asp:GridView CssClass="table" runat="server" ID="Resultados">
+             <asp:GridView CssClass="table" runat="server" ID="Resultados" AutoGenerateColumns="false">
                 <AlternatingRowStyle BackColor="White" />
                   <EditRowStyle BackColor="#2461BF" />
                   <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
@@ -26,6 +26,25 @@
                   <SortedAscendingHeaderStyle BackColor="#6D95E1" />
                   <SortedDescendingCellStyle BackColor="#E9EBEF" />
                   <SortedDescendingHeaderStyle BackColor="#4870BE" />
+                 
+
+                 <Columns>
+                     <asp:BoundField DataField="PosicionFinal" 
+                        HeaderText="Posicion Final" />
+
+                     <asp:BoundField DataField="NroInscripcion" 
+                        HeaderText="Numero de participante" />
+
+                     <asp:BoundField DataField="Nya" 
+                        HeaderText="Nombre y apellido" />
+
+                     <asp:TemplateField HeaderText="Finalizo" SortExpression="Finalizo">
+                        <ItemTemplate><%# (Boolean.Parse(Eval("Finalizo").ToString())) ? "Si" : "No" %></ItemTemplate>
+                    </asp:TemplateField>
+
+                    <asp:BoundField DataField="TiempoLlegada" 
+                        HeaderText="Tiempo de llegada" />
+                 </Columns>
             </asp:GridView>
            
         </form>

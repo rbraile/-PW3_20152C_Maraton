@@ -24,7 +24,7 @@
                     <asp:BoundField DataField="Nombre" 
                         HeaderText="Nombre" SortExpression="Nombre" />
 
-                    <asp:BoundField DataField="numeroInscripcion" 
+                    <asp:BoundField DataField="NroInscripcion" 
                         HeaderText="N° de inscripcion" />
 
                     <asp:BoundField DataField="Finalizo" 

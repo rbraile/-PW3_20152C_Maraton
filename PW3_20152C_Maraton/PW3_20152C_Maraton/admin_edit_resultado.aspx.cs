@@ -33,10 +33,14 @@ namespace PW3_20152C_Maraton
 
                         }
                     }//if
+                    else
+                    {
+                        Response.Redirect("/index.aspx");
+                    }
                 }//try
                 catch
                 {
-
+                    Response.Redirect("/index.aspx");
                 }
             }// ispostback
 

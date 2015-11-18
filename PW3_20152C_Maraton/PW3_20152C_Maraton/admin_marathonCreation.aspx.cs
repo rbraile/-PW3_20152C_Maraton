@@ -12,7 +12,17 @@ namespace PW3_20152C_Maraton
         public PW3_20152C_TP2_MaratonesEntities contexto2 = new PW3_20152C_TP2_MaratonesEntities();
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            try
+            {
+                if (Session["usuarioNivel"].Equals("Admin"))
+                {
+                    Response.Redirect("/index.aspx");
+                }
+            }
+            catch
+            {
+                Response.Redirect("/index.aspx");
+            }
         }
 
         protected void new_marathon(object sender, EventArgs e)

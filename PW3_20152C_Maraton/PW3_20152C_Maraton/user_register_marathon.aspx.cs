@@ -18,21 +18,19 @@ namespace PW3_20152C_Maraton
             message_warning.Visible = false;
             try
             {
-
-                if (Session["usuarioNivel"].Equals("usuario"))
-                {
-                    using (PW3_20152C_TP2_MaratonesEntities contexto = new PW3_20152C_TP2_MaratonesEntities())
-                    {
-                        confirm2.Visible = false;
-                        var maratonRep = new MaratonRepositorio(contexto);
-                        maratones.DataSource = maratonRep.getMaratones();
-                        maratones.DataBind();
-                    }
-                }
-                else
+                if (!Session["usuarioNivel"].Equals("usuario"))
                 {
                     Response.Redirect("/index.aspx");
                 }
+
+                using (PW3_20152C_TP2_MaratonesEntities contexto = new PW3_20152C_TP2_MaratonesEntities())
+                {
+                    confirm2.Visible = false;
+                    var maratonRep = new MaratonRepositorio(contexto);
+                    maratones.DataSource = maratonRep.getMaratones();
+                    maratones.DataBind();
+                }
+                
             }
             catch {
                 Response.Redirect("/index.aspx");

@@ -3,6 +3,8 @@
 <%@ Register Src="~/ucFooter.ascx" TagPrefix="uc1" TagName="ucFooter" %>
 
 
+
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -19,7 +21,9 @@
     </asp:ContentPlaceHolder>
 </head>
 <body class="login">
+
     <asp:ContentPlaceHolder ID="UserTitle" runat="server">
+        
         <header>
             <h1>Bienvenido, Usuario!</h1>
         </header>
@@ -31,7 +35,7 @@
                         <li role="presentation"><a href="user_register_marathon.aspx">Inscribirse a una Maraton</a></li>
                         <li role="presentation"><a href="user_marathon_records.aspx">Ver historial de Maratones</a></li>
                         <li role="presentation"><a href="user_edit.aspx">Administrar datos de Usuario</a></li>
-                        <li role="presentation"><a href="/index.aspx">Cerrar sesion</a></li>
+                        <li role="presentation"><a href="cerrar_session.aspx" runat="server">Cerrar sesion</a></li>
                     </ul>
                 </nav>
             </asp:ContentPlaceHolder>

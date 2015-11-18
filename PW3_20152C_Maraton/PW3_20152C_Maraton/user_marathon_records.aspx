@@ -4,10 +4,14 @@
     <script type="text/javascript" src="/scripts/ajax.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <div class="panel panel-default">
+    <form id="maratones_historial" runat="server">
+
+    
+    <div class="panel panel-default">
       <div class="panel-heading">Historial de maratones</div>
-     
+
+        <asp:HiddenField ID="session" runat="server" />
 
       </div>
-    
+    </form> 
 </asp:Content>

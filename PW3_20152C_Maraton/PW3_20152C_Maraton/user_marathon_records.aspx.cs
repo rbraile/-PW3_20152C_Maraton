@@ -11,7 +11,17 @@ namespace PW3_20152C_Maraton
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            try
+            {
+                if (!Session["usuarioNivel"].Equals("usuario"))
+                {
+                    Response.Redirect("/index.aspx");
+                }
+            }
+            catch
+            {
+                Response.Redirect("/index.aspx");
+            }
         }
     }
 }

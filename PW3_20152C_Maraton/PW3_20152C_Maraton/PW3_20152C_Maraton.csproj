@@ -129,11 +129,13 @@
     <Content Include="admin_marathonCreation_confirm.aspx" />
     <Content Include="admin_marathonResultUpload.aspx" />
     <Content Include="admin_marathonResultUpload_confirm.aspx" />
+    <Content Include="cerrar_session.aspx" />
     <Content Include="css\bootstrap-theme.css" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\general.css" />
     <Content Include="css\login.css" />
     <Content Include="index.aspx" />
+    <Content Include="maratones_realizadas.asmx" />
     <Content Include="newUser_registration.aspx" />
     <Content Include="newUser_registration_confirm.aspx" />
     <Content Include="scripts\funciones.js" />
@@ -235,12 +237,20 @@
     <Compile Include="admin_marathonResultUpload_confirm.aspx.designer.cs">
       <DependentUpon>admin_marathonResultUpload_confirm.aspx</DependentUpon>
     </Compile>
+    <Compile Include="cerrar_session.aspx.cs">
+      <DependentUpon>cerrar_session.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cerrar_session.aspx.designer.cs">
+      <DependentUpon>cerrar_session.aspx</DependentUpon>
+    </Compile>
     <Compile Include="clases\Md5.cs" />
     <Compile Include="clases\ResultadoParticipante.cs" />
     <Compile Include="clases\UltimaMaraton.cs" />
     <Compile Include="dal\MaratonRepositorio.cs" />
     <Compile Include="dal\ResultadoRepositorio.cs" />
     <Compile Include="dal\UsuarioRepsitorio.cs" />
+    <Compile Include="DTO\MaratonDTO.cs" />
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -257,6 +267,10 @@
     </Compile>
     <Compile Include="Maraton.cs">
       <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="maratones_realizadas.asmx.cs">
+      <DependentUpon>maratones_realizadas.asmx</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>

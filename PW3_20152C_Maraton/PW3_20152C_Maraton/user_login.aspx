@@ -29,7 +29,7 @@
                         ID="CustomValidator1" runat="server" ErrorMessage="La clave debe tener al menos 3 caracteres"></asp:CustomValidator>
                 </div>
               </div>
-            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
               <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">
                   <asp:Button CssClass="btn btn-default" ID="Login_user" runat="server" Text="Login" OnClick="login_user" />

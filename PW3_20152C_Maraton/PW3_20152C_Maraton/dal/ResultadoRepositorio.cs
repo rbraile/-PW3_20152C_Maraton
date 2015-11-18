@@ -87,5 +87,13 @@ namespace PW3_20152C_Maraton
                     && resultado.IdUsuario == idUsuario
                     select resultado).Single();
         }
+
+        public int posicionYaCargada(int idMaraton, int posicion) 
+        {
+            return (from resultado in contexto.ResultadoMaratonParticipante
+                           where resultado.IdMaraton == idMaraton && resultado.PosicionFinal == posicion
+                                  select resultado).Count();
+            
+        }
     }
 }

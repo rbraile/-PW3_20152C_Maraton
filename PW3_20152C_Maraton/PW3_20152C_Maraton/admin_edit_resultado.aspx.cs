@@ -13,6 +13,7 @@ namespace PW3_20152C_Maraton
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            message_ok.Visible = false;
             if (!IsPostBack)
             {
                 try
@@ -25,8 +26,8 @@ namespace PW3_20152C_Maraton
                             var parsed = HttpUtility.ParseQueryString(currurl);
                             int idUsuario = Convert.ToInt32(parsed["idUsuario"]);
                             int idMaraton = Convert.ToInt32(parsed["idMaraton"]);
-                            IdMaraton.Value = parsed["idMaraton"];
-                            IdUsuario.Value = parsed["idUsuario"];
+                                IdMaraton.Value = parsed["idMaraton"];
+                                IdUsuario.Value = parsed["idUsuario"];
                             
                             var resultadoRep = new ResultadoRepositorio(contexto);
                             ResultadoParticipante participante = resultadoRep.getMaratonParticipante(idUsuario, idMaraton);
@@ -53,16 +54,26 @@ namespace PW3_20152C_Maraton
                 int idMaraton = Convert.ToInt32(IdMaraton.Value);
                 int idUsuario = Convert.ToInt32(IdUsuario.Value);
 
+                ResultadoRepositorio resultadoRep = new ResultadoRepositorio(contexto);
                 ResultadoMaratonParticipante resultadoP = (from resultado in contexto.ResultadoMaratonParticipante
                                                            where resultado.IdUsuario == idUsuario && resultado.IdMaraton == idMaraton
                                                            select resultado).Single();
-                
-                resultadoP.TiempoLlegada = Convert.ToInt32(Llegada.Text);
-                resultadoP.Finalizo = Convert.ToBoolean(checkFinalizo.SelectedValue);
-                resultadoP.PosicionFinal = Convert.ToInt32(PosFinal.Text);
-                contexto.SaveChanges();
-                Response.Redirect("/admin_agregar_resultados.aspx?maratonId=" + idMaraton);
-            }
+                int valorPosicion = Convert.ToInt32(PosFinal.Text);
+                if (resultadoRep.posicionYaCargada(Convert.ToInt32(idMaraton), valorPosicion) > 0)
+                 {
+                     message_ok.Visible = true;
+                 }
+                 else
+                 {
+                     
+                    resultadoP.TiempoLlegada = Convert.ToInt32(Llegada.Text);
+                     resultadoP.Finalizo = Convert.ToBoolean(checkFinalizo.SelectedValue);
+                     resultadoP.PosicionFinal = Convert.ToInt32(PosFinal.Text);
+                     contexto.SaveChanges();
+                     Response.Redirect("/admin_agregar_resultados.aspx?maratonId=" + idMaraton);
+                    
+                 }//else
+            }//using 
         }
     }
 }

@@ -4,7 +4,10 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="adminIndex_ContentPlaceHolder" runat="server">
 
         <div class="form-horizontal login-form">
-            
+            <div id="message_ok" runat="server" class="alert alert-error" role="alert">
+                <span class="glyphicon glyphicon-error" aria-hidden="true"></span>
+                <span class="sr-only">Success:</span> Esta posicion ya esta cargada
+            </div>
             <div class="form-group">
                 <label class="col-sm-5 control-label">Finalizo</label>
                 <div class="col-sm-7">

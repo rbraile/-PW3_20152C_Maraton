@@ -13,6 +13,15 @@ namespace PW3_20152C_Maraton {
     public partial class admin_edit_resultado {
         
         /// <summary>
+        /// Control message_ok.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl message_ok;
+        
+        /// <summary>
         /// Control checkFinalizo.
         /// </summary>
         /// <remarks>

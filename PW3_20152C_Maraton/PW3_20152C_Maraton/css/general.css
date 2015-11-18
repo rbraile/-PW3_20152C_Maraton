@@ -1,4 +1,8 @@
-﻿header {
+﻿*{
+    font-family: 'Roboto', sans-serif !important;
+}
+
+header {
     background: blue;
     padding: 20px 0;
     color: #fff;    
@@ -58,3 +62,8 @@ footer p {
     text-align: center;
     margin: 20px auto 0;
 }
+
+.options-menu{
+    margin: 10px;  
+    text-align: center; 
+    }

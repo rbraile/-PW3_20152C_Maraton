@@ -15,7 +15,12 @@ namespace PW3_20152C_Maraton
         
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack) {
+                usuario_registro.Visible = true;
+                message_ok.Visible = false;
+                message_error.Visible = false;
+                message_warning.Visible = false;
+            }
         }
 
         protected void new_user(object sender, EventArgs e)
@@ -36,7 +41,19 @@ namespace PW3_20152C_Maraton
                 user.LugarResidencia = residencia.Text;
                 user.FechaNac = Convert.ToDateTime(fechaNac.Text);
 
-                UserRep.Crear(user);
+                try
+                {
+                    UserRep.Crear(user);
+                    message_ok.Visible = true;
+                    usuario_registro.Visible = false;
+                }
+                catch
+                {
+                    message_error.Visible = true;
+                       
+                }
+                
+
             }
         }
     }

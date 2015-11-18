@@ -10,6 +10,6 @@
 namespace PW3_20152C_Maraton {
     
     
-    public partial class usuario1 {
+    public partial class admin_index {
     }
 }

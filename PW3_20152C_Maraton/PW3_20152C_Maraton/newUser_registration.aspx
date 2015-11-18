@@ -6,7 +6,7 @@
     <script src="scripts/funciones.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="adminIndex_ContentPlaceHolder" runat="server">
-    <div class="form-horizontal login-form">
+    <div runat="server" id="usuario_registro" class="form-horizontal login-form">
         <div class="form-group">
             <label for="inputEmail3" class="col-sm-5 control-label">
                 Nombre de Usuario</label>
@@ -100,7 +100,28 @@
                 <a class="btn btn-default" href="index.aspx">Cancelar</a>
             </div>
         </div>
-    </div></asp:Content>
+    </div>
+  
+    <div id="message_ok" runat="server" class="alert alert-success" role="alert">
+        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+        <span class="sr-only">Success:</span>Se ha registrado exitosamente 
+        <a href="user_login.aspx">Login</a>
+    </div>
+
+    <div id="message_error" runat="server" class="alert alert-error confirm-content" role="alert">
+        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        <span class="sr-only">Error:</span>
+        No se ha podio registrar <a href="newUser_registration.aspx">Intentelo nuevamente</a>
+    </div>
+
+    <div id="message_warning" runat="server" class="alert alert-warning" role="alert">
+        <span class="glyphicon glyphicon-warning" aria-hidden="true"></span>
+        <span class="sr-only">Warning:</span>
+        Se ha registrado pero esta en lista de espera de la maraton <a href="user_index.aspx">Volver</a>
+        
+    </div>
+
+</asp:Content>
 
 
 

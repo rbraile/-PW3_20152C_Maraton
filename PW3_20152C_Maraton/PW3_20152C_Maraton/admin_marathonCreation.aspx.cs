@@ -12,7 +12,17 @@ namespace PW3_20152C_Maraton
         public PW3_20152C_TP2_MaratonesEntities contexto2 = new PW3_20152C_TP2_MaratonesEntities();
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            try
+            {
+                if (!Session["usuarioNivel"].Equals("Admin"))
+                {
+                    Response.Redirect("/index.aspx");
+                }
+            }
+            catch
+            {
+                Response.Redirect("/index.aspx");
+            }
         }
 
         protected void new_marathon(object sender, EventArgs e)
@@ -20,6 +30,7 @@ namespace PW3_20152C_Maraton
             var MaratonRep = new MaratonRepositorio(contexto2);
             Maraton maraton = new Maraton();
             maraton.Nombre = marathon_name.Text;
+            maraton.FechaHorarioComienzo = Convert.ToDateTime(fecha.Text);
             maraton.MaxParticipantes = Convert.ToInt32(max_participantes.Text);
             maraton.LugarSalida = start_point.Text;
             maraton.ParticipantesEnEspera = Convert.ToInt32(max_participants_waitingList.Text);
@@ -28,6 +39,7 @@ namespace PW3_20152C_Maraton
             maraton.TercerPremio = Convert.ToInt32(third_place_prize.Text);
 
             MaratonRep.Crear(maraton);
+            Response.Redirect("/admin_marathonCreation.aspx");
  
         }
 

@@ -22,13 +22,13 @@ namespace PW3_20152C_Maraton {
         protected global::System.Web.UI.HtmlControls.HtmlForm editUser;
         
         /// <summary>
-        /// Control TextBox3.
+        /// Control nombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox3;
+        protected global::System.Web.UI.WebControls.TextBox nombre;
         
         /// <summary>
         /// Control RequiredFieldValidator3.
@@ -40,13 +40,13 @@ namespace PW3_20152C_Maraton {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
         
         /// <summary>
-        /// Control TextBox4.
+        /// Control apellido.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox4;
+        protected global::System.Web.UI.WebControls.TextBox apellido;
         
         /// <summary>
         /// Control RequiredFieldValidator4.
@@ -58,40 +58,13 @@ namespace PW3_20152C_Maraton {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator4;
         
         /// <summary>
-        /// Control Email.
+        /// Control fecha.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Email;
-        
-        /// <summary>
-        /// Control RequiredFieldValidator7.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator7;
-        
-        /// <summary>
-        /// Control RegularExpressionEmail.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionEmail;
-        
-        /// <summary>
-        /// Control TextBox5.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox5;
+        protected global::System.Web.UI.WebControls.TextBox fecha;
         
         /// <summary>
         /// Control validarFecha.
@@ -100,16 +73,16 @@ namespace PW3_20152C_Maraton {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CustomValidator validarFecha2;
+        protected global::System.Web.UI.WebControls.CustomValidator validarFecha;
         
         /// <summary>
-        /// Control TextBox6.
+        /// Control lugar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox6;
+        protected global::System.Web.UI.WebControls.TextBox lugar;
         
         /// <summary>
         /// Control RequiredFieldValidator6.
@@ -128,5 +101,14 @@ namespace PW3_20152C_Maraton {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button edituserButton;
+        
+        /// <summary>
+        /// Control cosa.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl cosa;
     }
 }

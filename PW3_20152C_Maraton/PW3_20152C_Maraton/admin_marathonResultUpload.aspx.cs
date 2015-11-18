@@ -11,7 +11,26 @@ namespace PW3_20152C_Maraton
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            try
+            {
+                if (!Session["usuarioNivel"].Equals("Admin"))
+                {
+                    Response.Redirect("/index.aspx");
+                }
+                else
+                {
+                    using (PW3_20152C_TP2_MaratonesEntities contexto = new PW3_20152C_TP2_MaratonesEntities())
+                    {
+                        MaratonRepositorio maratonRep = new MaratonRepositorio(contexto);
+                        maratones.DataSource = maratonRep.getMaratonesFinalizadas();
+                        maratones.DataBind();
+                    }
+                }//else
+            }
+            catch
+            {
+                Response.Redirect("/error.aspx");
+            }
         }
 
         protected void upload_result(object sender, EventArgs e)

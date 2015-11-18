@@ -15,6 +15,7 @@ namespace PW3_20152C_Maraton
 
         protected void login_admin(object sender, EventArgs e)
         {
+
             Response.Redirect("/admin_index.aspx");
         }
     }

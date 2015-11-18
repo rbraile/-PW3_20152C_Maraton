@@ -2,56 +2,50 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <nav>
-        <ul class="nav nav-pills">
-            <li role="presentation"><a href="/user_login.aspx">Ingresar como Usuario</a></li>
-            <li role="presentation"><a href="/newUser_registration.aspx">Registrarse</a></li>
-            <li role="presentation"><a href="/admin_login.aspx">Ingresar como Administrador</a></li>
-        </ul>
-    </nav>
+    <div class="options-menu">
+        <a class="btn btn-success btn-lg" href="/user_login.aspx">Iniciar Sesión</a>
+        <a class="btn btn-warning btn-lg" href="/newUser_registration.aspx">Registrarse</a>
+    </div>
+    
+
     <div class="panel panel-default">
-      <div class="panel-heading">Resultado ultima maraton</div>
-      <table class="table">
-        <thead>
-            <tr>
-                <th>puesto</th>
-                <th>DORSAL</th>
-                <th>Nombre y apellido</th>
-                <th>Tiempo</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>1</td>
-                <td>Juan Perez</td>
-                <td>1:10:30</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>1</td>
-                <td>Juan Perez</td>
-                <td>1:10:30</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>1</td>
-                <td>Juan Perez</td>
-                <td>1:10:30</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>1</td>
-                <td>Juan Perez</td>
-                <td>1:10:30</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>1</td>
-                <td>Juan Perez</td>
-                <td>1:10:30</td>
-            </tr>
-        </tbody>
-      </table>
+        <form runat="server">
+            <div class="panel-heading">
+                Resultado ultima maraton <strong><asp:Label runat="server" ID="nombre"></asp:Label></strong>
+            </div>
+             <asp:GridView CssClass="table" runat="server" ID="Resultados" AutoGenerateColumns="false">
+                <AlternatingRowStyle BackColor="White" />
+                  <EditRowStyle BackColor="#2461BF" />
+                  <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                  <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                  <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+                  <RowStyle BackColor="#EFF3FB" />
+                  <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
+                  <SortedAscendingCellStyle BackColor="#F5F7FB" />
+                  <SortedAscendingHeaderStyle BackColor="#6D95E1" />
+                  <SortedDescendingCellStyle BackColor="#E9EBEF" />
+                  <SortedDescendingHeaderStyle BackColor="#4870BE" />
+                 
+
+                 <Columns>
+                     <asp:BoundField DataField="PosicionFinal" 
+                        HeaderText="Posicion Final" />
+
+                     <asp:BoundField DataField="NroInscripcion" 
+                        HeaderText="Numero de participante" />
+
+                     <asp:BoundField DataField="Nya" 
+                        HeaderText="Nombre y apellido" />
+
+                     <asp:TemplateField HeaderText="Finalizo" SortExpression="Finalizo">
+                        <ItemTemplate><%# (Boolean.Parse(Eval("Finalizo").ToString())) ? "Si" : "No" %></ItemTemplate>
+                    </asp:TemplateField>
+
+                    <asp:BoundField DataField="TiempoLlegada" 
+                        HeaderText="Tiempo de llegada" />
+                 </Columns>
+            </asp:GridView>
+           
+        </form>
     </div>
 </asp:Content>

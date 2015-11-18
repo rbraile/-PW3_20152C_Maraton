@@ -1,9 +1,9 @@
 ﻿function validateDate(oSrc, args) {
     var iDay, iMonth, iYear;
     var arrValues;
-    arrValues = args.Value.split("/");
-    iMonth = arrValues[0];
-    iDay = arrValues[1];
+    arrValues = args.Value.split("-");
+    iDay = arrValues[0];
+    iMonth = arrValues[1];
     iYear = arrValues[2];
 
     var testDate = new Date(iYear, iMonth - 1, iDay);

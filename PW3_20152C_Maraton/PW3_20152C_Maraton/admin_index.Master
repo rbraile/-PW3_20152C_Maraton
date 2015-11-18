@@ -26,17 +26,14 @@
     </asp:ContentPlaceHolder>
     <div id="general-content">
         <asp:ContentPlaceHolder ID="Admin_Header" runat="server">
-            <nav>
-                <ul class="nav nav-pills">
-                    <li role="presentation"><a href="/admin_marathonCreation.aspx">Crear Nueva Maraton</a></li>
-                    <li role="presentation"><a href="/admin_marathonResultUpload.aspx">Cargar Resultados de una Maraton</a></li>
-                    <li role="presentation"><a href="/index.aspx">Cerrar sesion</a></li>
-                </ul>
-            </nav>
+            <div class="options-menu">
+            <a class="btn btn-info" href="/admin_marathonCreation.aspx">Crear Nueva Maraton</a>
+            <a class="btn btn-info" href="/admin_marathonResultUpload.aspx">Cargar Resultados de una Maraton</a>
+            <a class="btn btn-danger" href="/cerrar_session.aspx">Cerrar sesion</a>
+            </div>
         </asp:ContentPlaceHolder>
         <form id="admin_login" runat="server">
             <asp:ContentPlaceHolder ID="adminIndex_ContentPlaceHolder" runat="server">
-            
             </asp:ContentPlaceHolder>
         </form>
     </div>

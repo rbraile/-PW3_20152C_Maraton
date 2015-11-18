@@ -18,7 +18,7 @@ namespace PW3_20152C_Maraton
                 Maraton maraton = maratonRep.getMaratonesFinalizadas().First();
                 nombre.Text = maraton.Nombre;
                 int idUltimaMaraton = maraton.IdMaraton;
-                List<UltimaMaraton> uMaraton = maratonRep.getUltimaMaraton(idUltimaMaraton);
+                List<UltimaMaraton> uMaraton = maratonRep.getUltimaMaraton(idUltimaMaraton, 10);
                 Resultados.DataSource = uMaraton;
                 Resultados.DataBind();
             }

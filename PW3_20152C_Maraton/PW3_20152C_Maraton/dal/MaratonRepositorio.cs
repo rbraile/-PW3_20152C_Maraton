@@ -115,9 +115,9 @@ namespace PW3_20152C_Maraton
             return maratonFiltro;
         }
 
-        public List<UltimaMaraton> getUltimaMaraton(int IdMaraton)
+        public List<UltimaMaraton> getUltimaMaraton(int IdMaraton, int limite)
         {
-            return (from maratones in contexto.Maraton
+            var cosa = (from maratones in contexto.Maraton
                     join resultados in contexto.ResultadoMaratonParticipante on maratones.IdMaraton equals resultados.IdMaraton
                     join users in contexto.Usuario on resultados.IdUsuario equals users.IdUsuario
                     where resultados.IdMaraton == IdMaraton
@@ -126,7 +126,8 @@ namespace PW3_20152C_Maraton
                                  Nya = users.Nombre + " " + users.Apellido,
                                  Finalizo = resultados.Finalizo.Value,
                                  TiempoLlegada = resultados.TiempoLlegada.Value
-                    }).ToList();
+                    }).Take(limite);
+            return cosa.ToList();
         }
 
         public List<MaratonDTO> obtenerMaratones(int IdUsuario)

@@ -14,7 +14,7 @@ namespace PW3_20152C_Maraton
         {
             try
             {
-                if (Session["usuarioNivel"].Equals("Admin"))
+                if (!Session["usuarioNivel"].Equals("Admin"))
                 {
                     Response.Redirect("/index.aspx");
                 }

@@ -64,6 +64,5 @@ namespace PW3_20152C_Maraton {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::PW3_20152C_Maraton.ucFooter ucFooter;
     }
 }

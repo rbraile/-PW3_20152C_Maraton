@@ -27,6 +27,10 @@
                     <asp:BoundField DataField="NroInscripcion" 
                         HeaderText="N° de inscripcion" />
 
+                      <asp:TemplateField HeaderText="Finalizo" SortExpression="Finalizo">
+                        <ItemTemplate><%# ( Eval("Finalizo").ToString() == Convert.ToString('1')) ? "Si" : "No" %></ItemTemplate>
+                    </asp:TemplateField>
+
                     <asp:BoundField DataField="Finalizo" 
                         HeaderText="Finalizo" />
 
